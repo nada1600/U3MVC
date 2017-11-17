@@ -1,0 +1,607 @@
+*{
+    margin: 0 ;
+    border: 0 ;
+    padding: 0 ;
+}
+/* kommentar */
+/* id = # class = . */
+body
+{
+    background: #f2f2f2;
+    font: 14px/20px Verdana, Verdana;
+    color:#333333;
+    margin: 0;
+}
+
+/* Rubriker till kanalerna */
+h2
+{
+    text-align: left;
+    font-size: 120%;
+    line-height: 120%;
+    padding: 5% 0;
+}
+
+h3
+{
+    text-decoration: underline;
+    line-height: 10% ;
+    padding: 2% 0;
+}
+
+p
+{
+    text-align: left;
+    padding: 2% 0 20% 0;
+}
+
+img
+{
+    text-align: center;
+    max-width: 100%;
+    height:  auto;
+    width: auto;
+}
+
+#menu-icon
+{  
+    display: none;
+}
+
+#expand
+{
+    display: none;
+}
+
+a:hover#menu
+{
+    border-radius: 3px;
+}
+
+
+#header1
+{
+    background: #cccccc;
+    width: 100%;
+    height: 100px;
+    position: fixed; /*alltid on top*/
+    top: 0;
+    left: 0;
+    z-index: 100; /*hålla sig över allt annat*/
+    opacity: 0.8; /*1.0 inte genomskinlig alls*/ 
+    border-bottom: 1px solid grey;
+
+}
+
+.header2
+{
+    margin-top: 100px;
+    width: auto;
+
+}
+
+#header2
+{
+    background: #4d4d4d;
+    width: 100%;
+    height: 50px;
+    position: fixed; /*alltid on top*/
+    z-index: 100; /*hålla sig över allt annat*/
+    opacity: 0.7; /*1.0 inte genomskinlig alls*/ 
+}
+
+
+#logo /* # för id*/
+
+{
+    margin: 5px 25px;
+    float: left;
+    height: 80px;
+    width: auto;
+}
+
+
+/*navigering */
+   #first
+{
+    float: right;
+    padding: 10px 25px 20px 0;
+}
+
+ul
+{
+    /*tar bort punkterna/punktlistan*/
+    list-style: none;
+}
+
+/* Understruken angiven sida*/
+.current
+{
+    color: ffffff;
+    font-weight: bold;
+}
+
+/* Färg på länkar...*/
+a
+{
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: strong;
+}
+
+a:hover
+{
+    color: #ff33ff;
+    text-decoration: underline;
+}
+
+#first ul li
+{
+    display: inline-block;
+    padding: 10px;
+}
+
+/*#date
+{
+    border-style: solid;
+    border-width: 1px;
+    border-color: #4d4d4d;
+}
+*/
+
+#date h3
+{
+    text-align: center;
+    text-decoration: none;
+    color: grey;
+    font-size: 120%;
+    line-height: 120%;
+    padding: 6% 0 0 0;
+}
+
+#second
+{
+    float: center;
+    text-align: center;
+    padding: 3px;
+    
+}
+
+#second ul li
+{
+    display: inline-block;
+    margin: 10px;
+    padding: 6px;
+}
+
+/* SÖKRUTA -- UPPGIFT 2 -- */
+#searchArea {
+    width: 300px;
+    height: 20px;
+    padding: 0;
+    margin: 2px 0 0 1%;
+    box-sizing: border-box;
+    font-size: 12px;
+    border: solid 1px lightgray;
+    
+}
+
+#searchBtn {
+    background-color: #4d4d4d; 
+    border: none;
+    color: #ffffff;
+    padding: 3px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 11px;
+    border-radius: 3px;
+
+}
+
+/*-------------------------*/
+
+section
+{
+    border: 1px dotted #4d4d4d;
+    border-radius: 3px;
+    
+}
+section
+{
+    float: left;
+    width: 20%;
+    margin: 5% 1%;
+    text-align: left;
+    padding: 8px;
+}
+
+section img
+{
+    height: 50px;
+}
+
+#mypage
+{
+    margin: 7% 2%;
+}
+
+#program li
+{
+    font-size: 12px;
+}
+
+
+article
+{
+    float: right;
+    margin: 8% 4% 2% 0%;
+    width: 25%;
+    height: auto;
+    border: 2px solid lightgrey;
+}
+
+#programbild
+{
+    float: right;
+    margin: 8% 20% 2% 0%;
+    width: 25%;
+    height: auto;
+    border: none;
+
+}
+#programtext
+{
+    float: left;
+    margin: 8% 2% 2% 30%;
+}
+
+aside
+{
+    float: left;
+    margin: 8% 2% 0% 4%;
+}
+
+.contact
+{
+    margin-bottom: 4%;
+}
+/* KONTAKTFORMULÄR -- UPPGIFT 2 -- */
+fieldset
+{
+    border: dotted 1px #4d4d4d;
+    padding: 4%
+}
+
+fieldset
+{
+    border-radius: 20px;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 3% 4%;
+    margin: 2% 0;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+
+
+#submitBtn {
+    background-color: #4d4d4d; 
+    border: none;
+    color: #ffffff;
+    padding: 2% 4%;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    float: right;
+    border-radius: 4px;
+}
+/*--KONTAKTFORMULÄR SLUT--------------*/
+
+footer.upper
+{
+    background: #4d4d4d;
+    width: 100%;
+    height: 80px;
+    overflow: hidden;
+    border-bottom: 1px solid grey;
+}
+
+#information
+{
+    margin: 0 0 20% 0;
+    float: right;
+}
+
+#kontakt
+{
+    margin: 0 0 20% 2%;
+    float: left;
+    color: #ffffff;
+}
+
+#kontakt p
+{
+    font-size: 10px;
+    text-align: left;
+}
+
+
+footer.upper h4, footer.upper a
+{
+    color: #ffffff;
+    margin: 0 1px;
+    padding: 2%;
+    font-size: 12px;
+    font-weight: strong;
+    text-align: left;
+}
+
+
+footer.under
+{
+    background: #333333;
+    width: 100%;
+    max-height: 40px;
+    overflow: hidden;
+}
+
+
+#copyright
+{
+    margin: 0 0 20% 0;
+    float: center;
+}
+
+
+footer.under p
+{
+    margin: 0 2%;
+    font-size: 10px;
+    color: #f2f2f2;
+}
+
+
+
+/*--------------MEDIA QUERY-----------------------------------------*/
+
+/*---------------SMARTPHONE-----------------*/
+/*--------------BREAKPOINT 1----------------------------------------*/
+/*-----------(SAMSUNG S7 --> 360px)---------*/
+@media only screen and (max-width: 550px)
+{
+    body
+    {
+        position: absolute;
+    }
+
+/*Första navigeringsmenyn*/    
+    #first
+    {
+        display: inline;
+    }
+
+    #menu-icon 
+    {
+        display: inline;
+    }
+    #menu-icon img
+    {
+        max-height: 50%;
+    }
+
+    #first:hover ul
+    {
+        display: block;
+    }
+
+    #first ul, ul:active ul
+    {   
+        display: none;
+        position: absolute;
+        background: lightgray;
+        border: 1px dotted #ffffff;
+        top: 20px;
+        right: 5px;
+        border-radius: 2px;
+        padding: 1px;
+    }
+
+    #first li a
+    {
+        text-align: left;
+        width: 50%;
+        padding: 5px 0 0 0;
+        margin: 0;
+    }
+    /*------------------------------*/
+
+    /*Anda navigeringsmenyn*/
+    #second
+    {
+        display: inline;
+    }
+
+    #expand
+    {
+        display: inline;
+    }
+
+    #expand img
+    {
+        max-height: 90%;
+    }
+    #second:hover ul
+    {
+        display: block;
+    }
+
+    #second ul, ul:active ul
+    {   
+        display: none;
+        text-align: left;
+        position: center;
+        padding: 1px;
+        background: #4d4d4d;
+        border: 1px solid darkgray;
+        right: 1px;
+        top: 90px;
+        width: 20%;
+        border-radius: 2px;
+    }
+
+
+    #second li a
+    {
+        text-align: left;
+        width: 50%;
+        padding: 0;
+        margin: 0;
+    }
+    /*----Navigering slut---------------------*/
+
+
+    #date
+    {   
+        float: left;
+        font-size: 90%;
+        margin: 50px 0 15px 1%;
+    }
+
+   section
+    {
+        float: left;
+        width: 100%;
+        margin: 0;
+        padding: 0 0 3% 1%;
+    }
+
+    section img
+    {
+        margin: 15px 0 0 0;
+    }
+
+    #mypage
+    {
+        margin-top: 20%;
+    }
+    
+
+     article
+    {
+        float: left;
+        width: 20%;
+        margin: 60px 0 0 2%;
+        padding: 0;
+    }
+    aside
+    {
+        float: left;
+        width: 100%;
+        margin: 0 0 0 2%;
+        padding: 0;
+    }
+
+    /*----------*/
+    #programbild
+    {
+        float: left;
+        margin-top: 12%;
+        height: auto;
+        width: 100%;
+    }
+
+    #programtext
+    {
+        float: left;
+        margin: 4px;
+        padding: 0;
+    }
+   /*----------*/
+
+   
+
+}
+
+/*----------------TABLET--------------------*/
+/*--------------BREAKPOINT 2----------------------------------------*/
+/*------------(iPad 3,4 --> 768px)--------------*/ 
+@media only screen and (max-width: 800px) and (min-width: 550px)
+{
+    body
+    {
+        position: absolute; 
+    }
+
+    #first p
+    {
+        display: none;
+    }
+
+    section
+    {
+        float: left;
+        width: 100%;
+        margin: 0;
+        padding: 0 0 3% 0;
+    }
+    section img
+    {
+        margin: 10px 0 0 0;
+    }
+
+    #programbild
+    {
+        float: left;
+        margin: 60px 0 0 0;
+        height: auto;
+        width: 100%;
+    }
+
+    #mypage
+    {   
+        float: left;
+        width: 100%;
+        margin: 18% 2%;
+        padding: 0;
+    }
+    #programtext
+    {
+        float: left;
+        margin: 4px;
+        padding: 0;
+    }
+
+    #date
+    {
+        float: left;
+        margin: 7% 0 0 1%;
+    }
+    
+    article
+    {
+        float: left;
+        width: 20%;
+        margin: 60px 0 0 0;
+        padding: 0;
+    }
+    aside
+    {
+        float: left;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    
+}
+
+
+/*-----------------DESKTOP--------------------*/
+/*--------------BREAKPOINT 3----------------------------------------*/
+/*----------(MacBook Pro 15" --> 1440px)----------*/
+@media only screen and (min-width: 800px)
+{
+    
+}
