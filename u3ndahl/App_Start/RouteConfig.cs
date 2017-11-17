@@ -18,19 +18,19 @@ namespace u3ndahl
             routes.MapRoute(
                 name: "Home",
                 url: "Hem",
-                defaults: new { controller = "Index", action = "Index", id = UrlParameter.Optional }
+                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
             );
 
             routes.MapRoute(
                 name: "Category",
                 url: "Kategori",
-                defaults: new { controller = "Index", action = "Category", id = UrlParameter.Optional }
+                defaults: new { controller = "Home", action = "Category", id = UrlParameter.Optional }
             );
 
             routes.MapRoute(
                 name: "None",
                 url: "",
-                defaults: new { controller = "Index", action = "Index", id = UrlParameter.Optional }
+                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
             );
 
 

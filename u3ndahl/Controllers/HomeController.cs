@@ -7,14 +7,14 @@ using u3ndahl.Models;
 
 namespace u3ndahl.Controllers
 {
-    public class IndexController : Controller
+    public class HomeController : Controller
     {
-        // GET: Index
+        // GET: Home
         public ActionResult Index()
         {
             Program p = new Program();
             p.title = "Program1";
-                 
+
             return View(p);
         }
 
