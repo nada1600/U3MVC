@@ -15,7 +15,7 @@ namespace u3ndahl.Controllers
             Program p = new Program();
             p.title = "Program1";
 
-            return View("Index",p);
+            return View(p);
         }
 
         public string Chann()
@@ -26,6 +26,11 @@ namespace u3ndahl.Controllers
         public ActionResult Channel()
         {
             return PartialView();
+        }
+
+        public ActionResult Category()
+        {
+            return View();
         }
     }
 }
