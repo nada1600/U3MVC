@@ -31,7 +31,8 @@
     <header id="header1">
         <div id="content">
             <div id="box">
-                <img src="Bilder/tv2.png" id="logo"/>
+                <img src="~/Photos/tv2.png" id="logo"/>
+                @Html.ActionLink("TV Tablå", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
 
 
@@ -41,11 +42,11 @@
                 <nav id="first">
                     <a href="#first" id="menu-icon"><img src="Bilder/menu.png" alt="Meny" /><p>Meny</p></a>
                     <ul>
-                        <li><a href="index.html" class="current"><img src="Bilder/home.png" title="Hem" alt="Hem"><p>Hem</p></a></li>
-                        <li><a href="program.html"><img src="Bilder/program.png" title="Program" alt="Program"><p>Program</p></a></li>
-                        <li><a href="mypage.html"><img src="Bilder/person1.png" title="Mina sidor" alt="Mina sidor"><p>Mina sidor</p></a></li>
-                        <li><a href="mypage.html"><img src="Bilder/heart.png" title="Mina favoriter" alt="Mina favoriter"><p>Mina favoriter</p></a></li>
-                        <li><a href="info.html"><img src="Bilder/tools.png" title="Hjälp" alt="Hjälp"><p>Hjälp</a></li>
+                        <li><a href="index.html" class="current"><img src="~/Photos/heart.png" title="Hem" alt="Hem"><p>Hem</p></a></li>
+                        <li><a href="program.html"><img src="~/Photos/program.png" title="Program" alt="Program"><p>Program</p></a></li>
+                        <li><a href="mypage.html"><img src="~/Photos/person1.png" title="Mina sidor" alt="Mina sidor"><p>Mina sidor</p></a></li>
+                        <li><a href="mypage.html"><img src="~/Photos/heart.png" title="Mina favoriter" alt="Mina favoriter"><p>Mina favoriter</p></a></li>
+                        <li><a href="info.html"><img src="~/Photos/tools.png" title="Hjälp" alt="Hjälp"><p>Hjälp</a></li>
 
                     </ul>
                 </nav>

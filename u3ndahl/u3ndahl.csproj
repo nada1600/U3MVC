@@ -94,6 +94,14 @@
     <Content Include="Content\Site.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="Photos\heart.png" />
+    <Content Include="Photos\menu.png" />
+    <Content Include="Photos\nr1.png" />
+    <Content Include="Photos\nr3.png" />
+    <Content Include="Photos\person1.png" />
+    <Content Include="Photos\program.png" />
+    <Content Include="Photos\tools.png" />
+    <Content Include="Photos\tv2.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
