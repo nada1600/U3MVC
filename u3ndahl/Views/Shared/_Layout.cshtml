@@ -3,14 +3,14 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <title>@ViewBag.Title - TV Tablå</title>
     <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
     <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="~/Content/U1style.css" rel="stylesheet"/>
     <script src="~/Scripts/modernizr-2.6.2.js"></script>
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
+    @*<div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -18,20 +18,52 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                @Html.ActionLink("TV Tablå", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                 </ul>
             </div>
         </div>
-    </div>
+    </div>*@
+
+    <!--FRÅN FÖRRA-->
+    <header id="header1">
+        <div id="content">
+            <div id="box">
+                <img src="Bilder/tv2.png" id="logo"/>
+            </div>
+
+
+            <div id="header3">
+
+                <!-- Navigations-meny-->
+                <nav id="first">
+                    <a href="#first" id="menu-icon"><img src="Bilder/menu.png" alt="Meny" /><p>Meny</p></a>
+                    <ul>
+                        <li><a href="index.html" class="current"><img src="Bilder/home.png" title="Hem" alt="Hem"><p>Hem</p></a></li>
+                        <li><a href="program.html"><img src="Bilder/program.png" title="Program" alt="Program"><p>Program</p></a></li>
+                        <li><a href="mypage.html"><img src="Bilder/person1.png" title="Mina sidor" alt="Mina sidor"><p>Mina sidor</p></a></li>
+                        <li><a href="mypage.html"><img src="Bilder/heart.png" title="Mina favoriter" alt="Mina favoriter"><p>Mina favoriter</p></a></li>
+                        <li><a href="info.html"><img src="Bilder/tools.png" title="Hjälp" alt="Hjälp"><p>Hjälp</a></li>
+
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+<!------------------------------------------------------------->
+
+
+
+
 
     <div class="container body-content">
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+            <p>&copy; @DateTime.Now.Year - TV Tablå</p>
         </footer>
     </div>
 

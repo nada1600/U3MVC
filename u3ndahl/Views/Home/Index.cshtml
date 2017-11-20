@@ -2,8 +2,14 @@
 @{
     ViewBag.Title = "Index";
 }
+
+
+
 <!--Viktigt att komma ihåg mellanrummet mellan model och u3ndahl + litet m...-->
 @model u3ndahl.Models.Program
+@DateTime.Now.DayOfWeek
+@DateTime.Now.ToShortDateString()
+@DateTime.Now.ToShortTimeString()
 
 <h2>Index</h2>
 <!--Viktigt att komma ihåg stort M...-->
