@@ -31,8 +31,9 @@
     <header id="header1">
         <div id="content">
             <div id="box">
-                <img src="~/Photos/tv2.png" id="logo"/>
-                @Html.ActionLink("TV Tablå", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                @*<img src="~/Photos/tv2.png" id="logo"/>*@
+                <a href='@Url.Action("Index","Home")'><img src="~/Photos/tv2.png" id="logo"/></a>
+                @*@Html.ActionLink("TV Tablå", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })*@
             </div>
 
 
