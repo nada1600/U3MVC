@@ -94,7 +94,9 @@
     <Content Include="Content\Site.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="Photos\expand.png" />
     <Content Include="Photos\heart.png" />
+    <Content Include="Photos\home.png" />
     <Content Include="Photos\menu.png" />
     <Content Include="Photos\nr1.png" />
     <Content Include="Photos\nr3.png" />
