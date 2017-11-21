@@ -9,7 +9,6 @@ namespace u3ndahl.Data
     public class Data
     {
         List<Program> programList = new List<Program>();
-
         //Programobjekt
         Program Program1 = new Program()
         {
@@ -48,7 +47,16 @@ namespace u3ndahl.Data
         //programList.Add(Program1);
         //programList.Add(Program2);
 
-
+        public void GetList()
+        {
+            foreach (Program p in programList)
+            {
+                programList.Add(Program1);
+                programList.Add(Program2);
+                programList.Add(Program3);
+                programList.Add(Program4);
+            }
+        }
 
 
 
@@ -67,6 +75,8 @@ namespace u3ndahl.Data
 
 
     }
-
+    
+    
+    //programList.Add(Program1);
     
 }
