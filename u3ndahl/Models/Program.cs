@@ -10,9 +10,11 @@ namespace u3ndahl.Models
         public int id { get; set; }
         public string title { get; set; }
         public string description { get; set; }
-        public int time { get; set; }
+        public Double time { get; set; }
         public string category { get; set; }
         public int channel { get; set; }
+        public List<Program> programL { get; set; }
+
 
     }
 }
