@@ -99,7 +99,9 @@
     <Content Include="Photos\home.png" />
     <Content Include="Photos\menu.png" />
     <Content Include="Photos\nr1.png" />
+    <Content Include="Photos\nr2.png" />
     <Content Include="Photos\nr3.png" />
+    <Content Include="Photos\nr4.png" />
     <Content Include="Photos\person1.png" />
     <Content Include="Photos\program.png" />
     <Content Include="Photos\tools.png" />
@@ -134,6 +136,8 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\_Channel1.cshtml" />
+    <Content Include="Views\Shared\_ChannelLayout.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
