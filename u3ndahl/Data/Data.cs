@@ -47,7 +47,7 @@ namespace u3ndahl.Data
         //programList.Add(Program1);
         //programList.Add(Program2);
 
-        public void GetList()
+        public List<Program> GetList()
         {
             foreach (Program p in programList)
             {
@@ -56,6 +56,7 @@ namespace u3ndahl.Data
                 programList.Add(Program3);
                 programList.Add(Program4);
             }
+            return programList;
         }
 
 

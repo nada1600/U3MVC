@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using u3ndahl.Models;
+using u3ndahl.Data;
 
 namespace u3ndahl.Controllers
 {
@@ -24,8 +25,7 @@ namespace u3ndahl.Controllers
         }
         public ActionResult _Channel1()
         {
-            Program p = new Program();
-            p.channel = 1;
+            
             return PartialView();      
 
         }
