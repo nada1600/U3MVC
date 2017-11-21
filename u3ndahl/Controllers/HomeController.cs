@@ -22,6 +22,13 @@ namespace u3ndahl.Controllers
         {
             return "Kanal 1";
         }
+        public ActionResult Kanal1()
+        {
+           
+                return PartialView();      
+
+        }
+        
 
         public ActionResult Channel()
         {
