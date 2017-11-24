@@ -10,13 +10,17 @@ namespace u3ndahl.Controllers
 {
     public class HomeController : Controller
     {
+        private ProgramOp po = new ProgramOp();
+
         // GET: Home
         public ActionResult Index()
         {
-            Program p = new Program();
-            p.title = "Program1";
 
-            return View(p);
+            //Program p = new Program();
+            //p.title = "Program1";
+            var model = po.GetP();
+
+            return View(model);
         }
 
         public string Chann()
@@ -24,10 +28,8 @@ namespace u3ndahl.Controllers
             return "Kanal 1";
         }
         public ActionResult _Channel1()
-        {
-            
+        {    
             return PartialView();      
-
         }
         
 
@@ -38,6 +40,12 @@ namespace u3ndahl.Controllers
 
         public ActionResult Category()
         {
+            return View();
+        }
+
+        public ActionResult ShowProgram()
+        {
+            
             return View();
         }
     }

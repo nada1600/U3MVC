@@ -6,7 +6,7 @@ using u3ndahl.Models;
 
 namespace u3ndahl.Data
 {
-    public class Data
+    public class ProgramOp
     {
         List<Program> programList = new List<Program>();
         //Programobjekt
@@ -43,9 +43,17 @@ namespace u3ndahl.Data
         };
         //-----------------------------
 
+        private List<Program> programs = new List<Program>
+            {
+                new Program {id=1, title="Indiana Jones", category ="Movie", channel=3, time=20.00 },
+                new Program {id=1, title="Walking dead", category ="Serie", channel=3, time=20.00 }
+            };
 
-        //programList.Add(Program1);
-        //programList.Add(Program2);
+        //public Program GetProgram()
+        //{
+        //    return "1";
+        //}
+        
 
         public List<Program> GetList()
         {
@@ -57,6 +65,22 @@ namespace u3ndahl.Data
                 programList.Add(Program4);
             }
             return programList;
+        }
+
+        //FL1
+        public Program GetP()
+        {
+            Program p = new Program()
+            {
+                title = "Hej",
+                channel = 1
+            };
+            //if (p.channel == 1)
+            //{
+            //    return 
+            //}
+
+            return p;
         }
 
 

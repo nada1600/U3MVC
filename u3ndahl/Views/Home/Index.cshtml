@@ -14,7 +14,8 @@
 @DateTime.Now.ToShortTimeString()
 <br />
 <!--Viktigt att komma ihåg stort M...-->
-@Model.title
+@Model.title och
+@Model.channel
 
 <!-- Sektioner med ikoner för de olika kanalerna -->
 <section>
@@ -23,6 +24,7 @@
     @Html.Partial("_Channel1")
     <ul id="program">
         <li>18.00 Alfons elefanter</li>
+        <li>@Model.title @Model.channel</li>
         <li>18.30 Fem myror är fler än fyra elefanter</li>
         <li>20.30 Femte elementet</li>
         <li>22.00 Nyheterna</li>
