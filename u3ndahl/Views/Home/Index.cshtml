@@ -1,4 +1,4 @@
-﻿@*@model List<u3ndahl.Models.Program>*@
+﻿@model List<u3ndahl.Models.Program>
 @{
     ViewBag.Title = "Index";
 }
@@ -14,31 +14,27 @@
 @DateTime.Now.ToShortTimeString()
 <br />
 <!--Viktigt att komma ihåg stort M...-->
-@Model.title och
-@Model.channel
+@*@*Model.title och
+@Model.channel*@
 
 <!-- Sektioner med ikoner för de olika kanalerna -->
 <section>
     <img src="~/Photos/nr1.png" title="Kanal 1" alt="Kanal 1" />
     <h2 id="program">Kanal 1</h2>
-    @Html.Partial("_Channel1")
+    @*@Html.Partial("_Channel1")*@
     <ul id="program">
         <li>18.00 Alfons elefanter</li>
-        <li>@Model.title @Model.channel</li>
+        <li>@*@Model.title @Model.channel*@</li>
         <li>18.30 Fem myror är fler än fyra elefanter</li>
         <li>20.30 Femte elementet</li>
         <li>22.00 Nyheterna</li>
     </ul>
 </section>
 
-@*<div>@{
-    Html.RenderPartial("_ShowProgram");
-}</div>*@
-
 <section>
     <img src="~/Photos/nr2.png" title="Kanal 2" alt="Kanal 2" />
     <h2 id="program">Kanal 2</h2>
-    @*@Html.Partial("_ShowProgram")*@
+    @Html.Partial("ShowProgram")
     
     @*<ul id="program">
         <li>18.00 The Goonies</li>

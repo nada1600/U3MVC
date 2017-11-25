@@ -15,20 +15,21 @@ namespace u3ndahl.Controllers
         // GET: Home
         public ActionResult Index()
         {
-
-            //Program p = new Program();
-            //p.title = "Program1";
-            var model = po.GetProgram();
-
+            //return View();
+            var model = po.GetPrograms();
             return View(model);
         }
 
         public ActionResult ShowProgram()
         {
-            var prog = po.GetList();
-            return PartialView(prog);
+            var model = po.GetPrograms();
+            return PartialView(model);
         }
-
+        public ActionResult ShowInfo()
+        {
+            var model = po.GetPrograms();
+            return View(model);
+        }
         public string Chann()
         {
             return "Kanal 1";

@@ -11,19 +11,19 @@ namespace u3ndahl.Data
         List<Program> programList = new List<Program>();
 
         //FL1
-        private List<Program> programs = new List<Program>()
-        {
-            new Program()
-            {
-                title = "Hejsan",
-                channel = 2
-            },
-            new Program()
-            {
-                title = "Hejhopp",
-                channel = 1
-            }
-        };
+        //private List<Program> programs = new List<Program>()
+        //{
+        //    new Program()
+        //    {
+        //        title = "Hejsan",
+        //        channel = 2
+        //    },
+        //    new Program()
+        //    {
+        //        title = "Hejhopp",
+        //        channel = 1
+        //    }
+        //};
         //------------------------------
 
         //Programobjekt
@@ -60,7 +60,7 @@ namespace u3ndahl.Data
         };
         //-----------------------------
 
-        private List<Program> programss = new List<Program>
+        private List<Program> programs = new List<Program>
             {
                 new Program {id=1, title="Alfons Elefanter", category ="Barn", channel=1, time=18.00 },
                 new Program {id=2, title="Fem myror är fler än fyra elefanter", category ="Barn", channel=1, time=18.30 },
@@ -84,11 +84,22 @@ namespace u3ndahl.Data
 
             };
 
+        public Program GetProgramByChannel(int channel)
+        {
+            var channelResult = programs.FirstOrDefault(c => c.channel == channel);
+            return channelResult;
+        }
+        public Program GetProgramById(int id)
+        {
+            var idResult = programs.FirstOrDefault(i => i.id == id);
+            return idResult;
+        }
+
         //public Program GetProgram()
         //{
         //    return "1";
         //}
-        
+
 
         public List<Program> GetList()
         {
