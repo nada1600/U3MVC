@@ -140,6 +140,7 @@
     <Content Include="Views\Shared\_ChannelLayout.cshtml" />
     <Content Include="Views\Home\ShowProgram.cshtml" />
     <Content Include="Views\Home\ShowInfo.cshtml" />
+    <Content Include="Views\Home\Channel.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

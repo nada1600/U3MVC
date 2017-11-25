@@ -43,9 +43,10 @@ namespace u3ndahl.Controllers
         }
         
 
-        public ActionResult Channel()
+        public ActionResult Channel(int id)
         {
-            return PartialView();
+            var p = po.GetChannel(id);
+            return View(p);
         }
 
         public ActionResult Category()

@@ -84,10 +84,17 @@ namespace u3ndahl.Data
 
             };
 
+
+        public List<Program> GetChannel(int channel)
+        {
+            var result = programs.FindAll(c => c.channel == channel);
+            //var result = programs.FirstOrDefault(c => c.channel == channel);
+            return result;
+        }
         public Program GetProgramByChannel(int channel)
         {
-            var channelResult = programs.FirstOrDefault(c => c.channel == channel);
-            return channelResult;
+            var result = programs.FirstOrDefault(c => c.channel == channel);
+            return result;
         }
         public Program GetProgramById(int id)
         {
