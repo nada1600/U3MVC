@@ -1,15 +1,11 @@
-﻿@model List<u3ndahl.Models.Program>
+﻿@model u3ndahl.Models.Program
 @{
     ViewBag.Title = "ShowInfo";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>ShowInfo</h2>
+<h2>Programinfo</h2>
 
-@foreach (var p in Model)
-{
-    <div>@p.title</div>
-    @*@Html.ActionLink("Edit", "Edit", new { id = item.id }) |
-    @Html.ActionLink("Details", "Details", new { id = item.id }) |
-    @Html.ActionLink("Delete", "Delete", new { id = item.id })*@
-}
+<div>
+    @Model.title
+</div>

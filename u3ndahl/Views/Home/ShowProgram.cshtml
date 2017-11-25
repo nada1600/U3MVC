@@ -1,8 +1,11 @@
 ﻿@*@model IEnumerable<u3ndahl.Models.Program>*@
 @model List<u3ndahl.Models.Program>
 
+<ul id="program">
+    @foreach (var p in Model)
+    {
 
-@foreach (var p in Model)
-{
-    <div>@p.title</div>
-}
+        <li>@p.title @p.time @Html.ActionLink("Info", "ShowInfo")</li> 
+
+    }
+</ul>

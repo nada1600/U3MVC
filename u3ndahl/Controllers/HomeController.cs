@@ -25,10 +25,10 @@ namespace u3ndahl.Controllers
             var model = po.GetPrograms();
             return PartialView(model);
         }
-        public ActionResult ShowInfo()
+        public ActionResult ShowInfo(int id)
         {
-            var model = po.GetPrograms();
-            return View(model);
+            var p = po.GetProgramById(id);
+            return View(p);
         }
         public string Chann()
         {

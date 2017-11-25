@@ -91,8 +91,8 @@ namespace u3ndahl.Data
         }
         public Program GetProgramById(int id)
         {
-            var idResult = programs.FirstOrDefault(i => i.id == id);
-            return idResult;
+            var result = programs.FirstOrDefault(i => i.id == id);
+            return result;
         }
 
         //public Program GetProgram()
