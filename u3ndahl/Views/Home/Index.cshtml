@@ -1,4 +1,4 @@
-﻿
+﻿@*@model List<u3ndahl.Models.Program>*@
 @{
     ViewBag.Title = "Index";
 }
@@ -24,23 +24,27 @@
     @Html.Partial("_Channel1")
     <ul id="program">
         <li>18.00 Alfons elefanter</li>
-        <li>@Model.title @Model.channel</li>
+        @*<li>@Model.title @Model.channel</li>*@
         <li>18.30 Fem myror är fler än fyra elefanter</li>
         <li>20.30 Femte elementet</li>
         <li>22.00 Nyheterna</li>
     </ul>
-
 </section>
+
+@*<div>@{
+    Html.RenderPartial("_ShowProgram");
+}</div>*@
 
 <section>
     <img src="~/Photos/nr2.png" title="Kanal 2" alt="Kanal 2" />
     <h2 id="program">Kanal 3</h2>
-    <ul id="program">
+    
+    @*<ul id="program">
         <li>18.00 The Goonies</li>
         <li>19.30 Stargate</li>
         <li>21.00 Femte elementet</li>
         <li>23.00 Indiana Jones</li>
-    </ul>
+    </ul>*@
 </section>
 
 <section>

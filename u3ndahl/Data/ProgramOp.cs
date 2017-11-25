@@ -9,6 +9,23 @@ namespace u3ndahl.Data
     public class ProgramOp
     {
         List<Program> programList = new List<Program>();
+
+        //FL1
+        private List<Program> programs = new List<Program>()
+        {
+            new Program()
+            {
+                title = "Hejsan",
+                channel = 2
+            },
+            new Program()
+            {
+                title = "Hejhopp",
+                channel = 1
+            }
+        };
+        //------------------------------
+
         //Programobjekt
         Program Program1 = new Program()
         {
@@ -43,7 +60,7 @@ namespace u3ndahl.Data
         };
         //-----------------------------
 
-        private List<Program> programs = new List<Program>
+        private List<Program> programss = new List<Program>
             {
                 new Program {id=1, title="Indiana Jones", category ="Movie", channel=3, time=20.00 },
                 new Program {id=1, title="Walking dead", category ="Serie", channel=3, time=20.00 }
@@ -68,7 +85,7 @@ namespace u3ndahl.Data
         }
 
         //FL1
-        public Program GetP()
+        public Program GetProgram()
         {
             Program p = new Program()
             {
@@ -77,10 +94,18 @@ namespace u3ndahl.Data
             };
             //if (p.channel == 1)
             //{
-            //    return 
+            //    return p; 
             //}
 
             return p;
+        }
+
+        public List<Program> GetPrograms() 
+        {
+            Program p = new Program();
+            programs.Add(p);
+            return programs;
+
         }
 
 

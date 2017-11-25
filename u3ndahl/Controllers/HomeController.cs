@@ -18,9 +18,15 @@ namespace u3ndahl.Controllers
 
             //Program p = new Program();
             //p.title = "Program1";
-            var model = po.GetP();
+            var model = po.GetProgram();
 
             return View(model);
+        }
+
+        public ActionResult ShowProgram()
+        {
+
+            return PartialView();
         }
 
         public string Chann()
@@ -43,10 +49,6 @@ namespace u3ndahl.Controllers
             return View();
         }
 
-        public ActionResult ShowProgram()
-        {
-            
-            return View();
-        }
+        
     }
 }
