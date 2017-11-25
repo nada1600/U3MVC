@@ -62,8 +62,26 @@ namespace u3ndahl.Data
 
         private List<Program> programss = new List<Program>
             {
-                new Program {id=1, title="Indiana Jones", category ="Movie", channel=3, time=20.00 },
-                new Program {id=1, title="Walking dead", category ="Serie", channel=3, time=20.00 }
+                new Program {id=1, title="Alfons Elefanter", category ="Barn", channel=1, time=18.00 },
+                new Program {id=1, title="Fem myror är fler än fyra elefanter", category ="Barn", channel=1, time=18.30 },
+                new Program {id=1, title="Femte elementet", category ="Film", channel=1, time=20.30 },
+                new Program {id=1, title="Nyheterna", category ="Nyheter", channel=1, time=20.30 },
+
+                new Program {id=1, title="The Goonies", category ="Film", channel=2, time=18.00 },
+                new Program {id=1, title="Stargate", category ="Film", channel=2, time=19.30 },
+                new Program {id=1, title="Death Proof", category ="Film", channel=2, time=21.00 },
+                new Program {id=1, title="Indiana Jones", category ="Film", channel=2, time=20.30 },
+
+                new Program {id=1, title="Morgonfotöljen", category ="Nyheter", channel=3, time=9.00 },
+                new Program {id=1, title="Loppisfyndarna", category ="Serie", channel=3, time=11.00 },
+                new Program {id=1, title="Sveriges bästa hemmabagare", category ="Serie", channel=3, time=19.00 },
+                new Program {id=1, title="Mytkrossarna", category ="Serie", channel=3, time=20.00 },
+
+                new Program {id=1, title="Vad är PI", category ="Kunskap", channel=4, time=19.00 },
+                new Program {id=1, title="Databasteknik för nybörjare", category ="Kunskap", channel=4, time=20.00 },
+                new Program {id=1, title="Nyhetssändning", category ="Nyheter", channel=4, time=21.00 },
+                new Program {id=1, title="Liftarens guide till galaxen", category ="Film", channel=4, time=21.30 }
+
             };
 
         //public Program GetProgram()
@@ -102,8 +120,7 @@ namespace u3ndahl.Data
 
         public List<Program> GetPrograms() 
         {
-            Program p = new Program();
-            programs.Add(p);
+            
             return programs;
 
         }

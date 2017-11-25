@@ -25,8 +25,8 @@ namespace u3ndahl.Controllers
 
         public ActionResult ShowProgram()
         {
-
-            return PartialView();
+            var prog = po.GetList();
+            return PartialView(prog);
         }
 
         public string Chann()
@@ -34,8 +34,11 @@ namespace u3ndahl.Controllers
             return "Kanal 1";
         }
         public ActionResult _Channel1()
-        {    
-            return PartialView();      
+        {
+            var model = po.GetProgram();
+
+            return View(model);
+            //return PartialView();      
         }
         
 
