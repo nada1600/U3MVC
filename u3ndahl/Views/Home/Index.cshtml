@@ -18,7 +18,14 @@
     @*@*Model.title och
         @Model.channel*@
 
-@Html.ActionLink("Barn", "ShowInfo", "Home", null)
+@*@Html.ActionLink("Barn", "ShowInfo", "Home", new { category category }, null)*@
+<ul id="program">
+    @foreach (var p in Model)
+    {
+        <li>@p.title @Html.ActionLink("(Kat)", "ShowCategory", "Home", new { Barn = p.category }, null)</li>
+
+    }
+</ul>
 
 
 

@@ -69,7 +69,7 @@ namespace u3ndahl.Controllers
         public ActionResult ShowCategory(string category = "Barn")
         {
             var c = po.GetCategory(category);
-            return View();
+            return View(c);
         }
 
         
