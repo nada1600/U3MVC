@@ -18,17 +18,6 @@
     @*@*Model.title och
         @Model.channel*@
 
-@Html.ActionLink("Barn", "ShowInfo", "Home", null)
-<ul id="program">
-    @foreach (var p in Model)
-    {
-        <li>@p.title @Html.ActionLink("(Kat)", "ShowCategory", "Home", new { Barn = p.category }, null)</li>
-
-    }
-</ul>
-
-
-
 
 
     <!-- Sektioner med ikoner för de olika kanalerna -->
