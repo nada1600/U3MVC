@@ -8,57 +8,7 @@ namespace u3ndahl.Data
 {
     public class ProgramOp
     {
-        List<Program> programList = new List<Program>();
-
-        //FL1
-        //private List<Program> programs = new List<Program>()
-        //{
-        //    new Program()
-        //    {
-        //        title = "Hejsan",
-        //        channel = 2
-        //    },
-        //    new Program()
-        //    {
-        //        title = "Hejhopp",
-        //        channel = 1
-        //    }
-        //};
-        //------------------------------
-
-        //Programobjekt
-        Program Program1 = new Program()
-        {
-            title = "Alfons Elefanter",
-            category = "Barn",
-            channel = 1,
-            time = 18.00
-        };
-
-        Program Program2 = new Program()
-        {
-            title = "Liftarens Guide till Galaxen",
-            category = "SciFi",
-            channel = 2,
-            time = 19.00
-        };
-
-        Program Program3 = new Program()
-        {
-            title = "Nyheter",
-            category = "Nyheter",
-            channel = 3,
-            time = 18.00
-        };
-
-        Program Program4 = new Program()
-        {
-            title = "Hela Sveriges bagare",
-            category = "Underhållning",
-            channel = 4,
-            time = 19.00
-        };
-        //-----------------------------
+        List<Program> programList = new List<Program>(); 
 
         private List<Program> programs = new List<Program>
             {
@@ -84,6 +34,11 @@ namespace u3ndahl.Data
 
             };
 
+        public List<Program> GetPrograms()
+        {
+            return programs;
+        }
+
 
         public List<Program> GetChannel(int channel)
         {
@@ -91,34 +46,20 @@ namespace u3ndahl.Data
             //var result = programs.FirstOrDefault(c => c.channel == channel);
             return result;
         }
-        public Program GetProgramByChannel(int channel)
+
+        public List<Program> GetCategory(string category)
         {
-            var result = programs.FirstOrDefault(c => c.channel == channel);
+            var result = programs.FindAll(p => p.category == category);
             return result;
         }
+
+        
         public Program GetProgramById(int id)
         {
             var result = programs.FirstOrDefault(i => i.id == id);
             return result;
         }
 
-        //public Program GetProgram()
-        //{
-        //    return "1";
-        //}
-
-
-        public List<Program> GetList()
-        {
-            foreach (Program p in programList)
-            {
-                programList.Add(Program1);
-                programList.Add(Program2);
-                programList.Add(Program3);
-                programList.Add(Program4);
-            }
-            return programList;
-        }
 
         //FL1
         public Program GetProgram()
@@ -136,22 +77,33 @@ namespace u3ndahl.Data
             return p;
         }
 
-        public List<Program> GetPrograms() 
-        {       
-            return programs;
+
+        public List<Program> GetC(int channel)
+        {
+            if (channel == 1)
+            {
+                var result1 = programs.FindAll(c => c.channel == channel);
+                return result1;
+            }
+            else if (channel == 2)
+            {
+                var result2 = programs.FindAll(c => c.channel == channel);
+                return result2;
+            }
+            else if (channel == 3)
+            {
+                var result3 = programs.FindAll(c => c.channel == channel);
+                return result3;
+            }
+            else if (channel == 4)
+            {
+                var result4 = programs.FindAll(c => c.channel == channel);
+                return result4;
+            }
+            else
+                return null;
+
         }
-
-        //public List<Program> GetPrograms()
-        //{
-        //    return programs;
-        //}
-
-        //public Program GetC(int channel)
-        //{
-        //    var result = programs.FirstOrDefault
-        //    if (var result = programs.FirstOrDefault(c => c.channel == channel));
-        //    return result;
-        //}
 
 
 

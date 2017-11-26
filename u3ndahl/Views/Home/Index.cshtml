@@ -18,6 +18,7 @@
     @*@*Model.title och
         @Model.channel*@
 
+@Html.ActionLink("Barn", "ShowInfo", "Home", null)
 
 
 
@@ -62,7 +63,7 @@
         <ul id="program">
             @*@Html.RenderPartial("_Channel3")*@
             @*@Html.RenderAction("_Channel3")*@
-            
+            @Html.Partial("Channel4")
             
             @*<li>19.00 Vad är PI</li>
             <li>20.00 Databasteknik för nybörjare</li>

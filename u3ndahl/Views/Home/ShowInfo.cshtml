@@ -8,5 +8,8 @@
 <h2>Programinfo</h2>
 
 <div>
-    @Model.title
+    Program: <strong> @Model.title</strong> <br />
+    Beskrivning: <strong> @Model.description </strong><br />
+    Kategori:  <strong> @Model.category </strong><br />
+@Html.ActionLink("Tillbaka", "Index")
 </div>

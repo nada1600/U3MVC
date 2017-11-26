@@ -18,6 +18,7 @@ namespace u3ndahl.Controllers
             //return View();
             var model = po.GetPrograms();
             return View(model);
+
         }
 
         public ActionResult ShowProgram()
@@ -34,12 +35,17 @@ namespace u3ndahl.Controllers
         {
             return "Kanal 1";
         }
-        public ActionResult _Channel1()
+        public ActionResult _Channel1(int id = 1)
         {
-            var model = po.GetProgram();
+            var model = po.GetChannel(id);
 
             return View(model);
             //return PartialView();      
+        }
+        public ActionResult _Channel2(int id = 2)
+        {
+            var model = po.GetChannel(id);
+            return PartialView(model);      
         }
         public ActionResult _Channel3(int id = 3)
         {
@@ -52,10 +58,12 @@ namespace u3ndahl.Controllers
             var p = po.GetChannel(id);
             return PartialView(p);
         }
-        public ActionResult Channel4(int id = 4)
+        public ActionResult Channel4(int channel = 0)
         {
-            var p = po.GetChannel(id);
-            return PartialView(p);
+            //var p = po.GetChannel(id);
+            //return PartialView(p);
+            var o = po.GetC(1);
+            return PartialView(o);
         }
 
         public ActionResult Category()
