@@ -1,0 +1,17 @@
+﻿@model List<u3ndahl.Models.Program>
+@{
+    ViewBag.Title = "Channel3";
+}
+
+<h2>Kanal 3</h2>
+
+
+    <ul id="program">
+        @foreach (var p in Model)
+        {
+
+            <li>@p.time.ToString("00.00")| @p.title @Html.ActionLink("(Info)", "ShowInfo", "Home", new { id = p.id }, null)</li>
+
+        }
+    </ul>
+

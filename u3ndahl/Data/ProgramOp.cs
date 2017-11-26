@@ -137,11 +137,21 @@ namespace u3ndahl.Data
         }
 
         public List<Program> GetPrograms() 
-        {
-            
+        {       
             return programs;
-
         }
+
+        //public List<Program> GetPrograms()
+        //{
+        //    return programs;
+        //}
+
+        //public Program GetC(int channel)
+        //{
+        //    var result = programs.FirstOrDefault
+        //    if (var result = programs.FirstOrDefault(c => c.channel == channel));
+        //    return result;
+        //}
 
 
 

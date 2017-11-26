@@ -41,12 +41,21 @@ namespace u3ndahl.Controllers
             return View(model);
             //return PartialView();      
         }
-        
-
-        public ActionResult Channel(int id)
+        public ActionResult _Channel3(int id = 3)
         {
             var p = po.GetChannel(id);
-            return View(p);
+            return PartialView(p);    
+        }
+
+        public ActionResult Channel(int id = 1)
+        {
+            var p = po.GetChannel(id);
+            return PartialView(p);
+        }
+        public ActionResult Channel4(int id = 4)
+        {
+            var p = po.GetChannel(id);
+            return PartialView(p);
         }
 
         public ActionResult Category()

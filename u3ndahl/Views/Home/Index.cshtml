@@ -40,7 +40,7 @@
     <section>
         <img src="~/Photos/nr2.png" title="Kanal 2" alt="Kanal 2" />
         <h2 id="program">Kanal 2</h2>
-        @Html.Partial("ShowProgram")
+       @* @Html.Partial("ShowProgram")*@
     </section>
 
 
@@ -48,10 +48,11 @@
         <img src="~/Photos/nr3.png" title="Kanal 3" alt="Kanal 3" />
         <h2 id="program">Kanal 3</h2>
         <ul id="program">
-            <li>09.00 Morgonfotöljen</li>
+            @Html.Partial("_Channel3")
+            @*<li>09.00 Morgonfotöljen</li>
             <li>11.00 Loppisfyndarna</li>
             <li>19.00 Sveriges bästa hemmabagare</li>
-            <li>20.00 Mytkrossarna</li>
+            <li>20.00 Mytkrossarna</li>*@
         </ul>
     </section>
 
@@ -59,10 +60,14 @@
         <img src="~/Photos/nr4.png" title="Kanal 4" alt="Kanal 4" />
         <h2 id="program">Kanal 4</h2>
         <ul id="program">
-            <li>19.00 Vad är PI</li>
+            @*@Html.RenderPartial("_Channel3")*@
+            @*@Html.RenderAction("_Channel3")*@
+            
+            
+            @*<li>19.00 Vad är PI</li>
             <li>20.00 Databasteknik för nybörjare</li>
             <li>21.00 Nyhetssändning</li>
-            <li>21.30 Liftarens guide till galaxen</li>
+            <li>21.30 Liftarens guide till galaxen</li>*@
         </ul>
     </section>
     <br />
