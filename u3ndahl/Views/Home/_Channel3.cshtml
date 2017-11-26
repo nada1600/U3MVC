@@ -3,11 +3,9 @@
     ViewBag.Title = "Channel3";
 }
 
-<h2>Kanal 3</h2>
-
 
     <ul id="program">
-        @foreach (var p in Model)
+        @foreach (var p in Model.Where (c => c.channel == 3))
         {
 
             <li>@p.time.ToString("00.00")| @p.title @Html.ActionLink("(Info)", "ShowInfo", "Home", new { id = p.id }, null)</li>

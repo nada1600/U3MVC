@@ -2,17 +2,14 @@
 @model List<u3ndahl.Models.Program>
 @{
     ViewBag.Title = "Channel";
-    Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
-<h2>Kanal</h2>
 
 <div>
     <ul id="program">
-        @foreach (var p in Model)
+        @foreach (var p in Model.Where(c => c.channel == 1))
         {
 
-            <li>@p.title @p.time @Html.ActionLink("Info", "ShowInfo")</li>
+            <li>@p.time.ToString("00.00")| @p.title @Html.ActionLink("(Info)", "ShowInfo", "Home", new { id = p.id }, null)</li>
 
         }
     </ul>

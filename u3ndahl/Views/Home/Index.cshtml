@@ -24,20 +24,20 @@
     <section>
         <img src="~/Photos/nr1.png" title="Kanal 1" alt="Kanal 1" />
         <h2 id="program">Kanal 1</h2>
-        @*@Html.Partial("_Channel1")*@
+        @Html.Partial("Channel")
         <ul id="program">
-            <li>18.00 Alfons elefanter</li>
-            <li>@*@Model.title @Model.channel*@</li>
+            @*<li>18.00 Alfons elefanter</li>
+            <li>@Model.title @Model.channel</li>
             <li>18.30 Fem myror är fler än fyra elefanter</li>
             <li>20.30 Femte elementet</li>
-            <li>22.00 Nyheterna</li>
+            <li>22.00 Nyheterna</li>*@
         </ul>
     </section>
 
     <section>
         <img src="~/Photos/nr2.png" title="Kanal 2" alt="Kanal 2" />
         <h2 id="program">Kanal 2</h2>
-       @* @Html.Partial("ShowProgram")*@
+       @Html.Partial("_Channel2")
     </section>
 
 
@@ -57,8 +57,6 @@
         <img src="~/Photos/nr4.png" title="Kanal 4" alt="Kanal 4" />
         <h2 id="program">Kanal 4</h2>
         <ul id="program">
-            @*@Html.RenderPartial("_Channel3")*@
-            @*@Html.RenderAction("_Channel3")*@
             @Html.Partial("Channel4")
             
             @*<li>19.00 Vad är PI</li>

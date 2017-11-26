@@ -10,78 +10,108 @@
     <script src="~/Scripts/modernizr-2.6.2.js"></script>
 </head>
 <body>
-    @*<div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("TV Tablå", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+    
+        @*<div class="navbar navbar-inverse navbar-fixed-top">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        @Html.ActionLink("TV Tablå", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                    </div>
+                    <div class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav">
+                        </ul>
+                    </div>
+                </div>
+            </div>*@
+
+        <!--FRÅN FÖRRA-->
+        <header id="header1">
+            <div id="content">
+                <div id="box">
+
+                    <a href='@Url.Action("Index","Home")'><img src="~/Photos/tv2.png" id="logo" /></a>
+                    @*@Html.ActionLink("TV Tablå", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })*@
+                </div>
+
+
+                <div id="header3">
+
+                    <!-- Navigations-meny-->
+                    <nav id="first">
+                        <a href="#first" id="menu-icon"><img src="~/Photos/menu.png" alt="Meny" /><p>Meny</p></a>
+                        <ul>
+                            <li><a href='@Url.Action("Index","Home")' class="navlink"><img src="~/Photos/home.png" title="Hem" alt="Hem"><p>Hem</p></a></li>
+                            <li><a href='@Url.Action("Index","Home")' class="navlink"><img src="~/Photos/program.png" title="Program" alt="Program"><p>Program</p></a></li>
+                            <li><a href='@Url.Action("Index","Home")' class="navlink"><img src="~/Photos/person1.png" title="Mina sidor" alt="Mina sidor"><p>Mina sidor</p></a></li>
+                            <li><a href='@Url.Action("Index","Home")' class="navlink"><img src="~/Photos/heart.png" title="Mina favoriter" alt="Mina favoriter"><p>Mina favoriter</p></a></li>
+                            <li><a href='@Url.Action("Index","Home")' class="navlink"><img src="~/Photos/tools.png" title="Hjälp" alt="Hjälp"><p>Hjälp</a></li>
+
+                        </ul>
+                    </nav>
+                </div>
             </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                </ul>
-            </div>
-        </div>
-    </div>*@
+        </header>
 
-    <!--FRÅN FÖRRA-->
-    <header id="header1">
-        <div id="content">
-            <div id="box">
-                
-                <a href='@Url.Action("Index","Home")'><img src="~/Photos/tv2.png" id="logo"/></a>
-                @*@Html.ActionLink("TV Tablå", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })*@
-            </div>
-
-
-            <div id="header3">
-
-                <!-- Navigations-meny-->
-                <nav id="first">
-                    <a href="#first" id="menu-icon"><img src="~/Photos/menu.png" alt="Meny" /><p>Meny</p></a>
+        <div class="header2">
+            <header id="header2">
+                <nav id="second">
+                    <a href="#second" id="expand"><img src="~/Photos/expand.png" alt="Vy" /></a>
                     <ul>
-                        <li><a href='@Url.Action("Index","Home")'class="navlink"><img src="~/Photos/home.png"  title="Hem" alt="Hem"><p>Hem</p></a></li>
-                        <li><a href='@Url.Action("Index","Home")'class="navlink"><img src="~/Photos/program.png"  title="Program" alt="Program"><p>Program</p></a></li>
-                        <li><a href='@Url.Action("Index","Home")'class="navlink"><img src="~/Photos/person1.png"  title="Mina sidor" alt="Mina sidor"><p>Mina sidor</p></a></li>
-                        <li><a href='@Url.Action("Index","Home")'class="navlink"><img src="~/Photos/heart.png"  title="Mina favoriter" alt="Mina favoriter"><p>Mina favoriter</p></a></li>
-                        <li><a href='@Url.Action("Index","Home")'class="navlink"><img src="~/Photos/tools.png"  title="Hjälp" alt="Hjälp"><p>Hjälp</a></li>
-
+                        <li><a href="@Url.Action("ShowCategory","Home")" class="navlink">Barn</a></li>
+                        <li><a href="@Url.Action("ShowCategory","Home")" class="navlink">Kunskap</a></li>
+                        <li><a href="@Url.Action("ShowCategory","Home")" class="navlink">Serie</a></li>
+                        <li><a href="@Url.Action("ShowCategory","Home")" class="navlink">Film</a></li>
                     </ul>
                 </nav>
-            </div>
+            </header>
         </div>
-    </header>
 
-    <div class="header2">
-        <header id="header2">
-            <nav id="second">
-                <a href="#second" id="expand"><img src="~/Photos/expand.png" alt="Vy" /></a>
-                <ul>
-                    <li><a href="@Url.Action("ShowCategory","Home")" class="navlink">Barn</a></li>
-                    <li><a href="@Url.Action("ShowCategory","Home")" class="navlink">Kunskap</a></li>
-                    <li><a href="@Url.Action("ShowCategory","Home")" class="navlink">Serie</a></li>
-                    <li><a href="@Url.Action("ShowCategory","Home")" class="navlink">Film</a></li>
-                </ul>
-            </nav>
-        </header>
-    </div>
-
-<!------------------------------------------------------------->
-    
+        <!------------------------------------------------------------->
 
 
 
 
-    <div class="container body-content">
+
+    @*<div class="container body-content">*@
+    <div>
         @RenderBody()
         <hr />
-        <footer>
+
+        <!-- Sidfot övre -->
+        <footer class="upper">
+            <section id="kontakt">
+                <h4><a href="about.html">Kontakta oss</h4></a>
+            </section>
+            <section id="information">
+                <nav>
+                    <ul id="infolist">
+                        <li><a href="about.html">Om webbsidan</a></li>
+                    </ul>
+                </nav>
+            </section>
+        </footer>
+
+        <!-- Sidfot undre -->
+        <footer class="under">
+            <section id="copyright">
+                <p>&copy; Copyright - Nadia @DateTime.Now.Year</p>
+            </section>
+
+        </footer>
+
+
+
+
+
+
+        @*<footer>
             <br />
             <p>&copy; @DateTime.Now.Year - TV Tablå</p>
-        </footer>
+        </footer>*@
     </div>
 
     <script src="~/Scripts/jquery-1.10.2.min.js"></script>

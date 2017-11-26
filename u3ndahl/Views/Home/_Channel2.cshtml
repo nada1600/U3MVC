@@ -1,15 +1,15 @@
-﻿
+﻿@model List<u3ndahl.Models.Program>
 @{
-    Layout = null;
+    ViewBag.Title = "Channel2";
 }
 
-@model List<u3ndahl.Models.Program>
 
 <ul id="program">
-    @foreach (var p in Model.Where (c => c.channel == 4))
+    @foreach (var p in Model.Where(c => c.channel == 2))
     {
 
         <li>@p.time.ToString("00.00")| @p.title @Html.ActionLink("(Info)", "ShowInfo", "Home", new { id = p.id }, null)</li>
 
     }
 </ul>
+

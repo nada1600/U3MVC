@@ -118,7 +118,28 @@ namespace u3ndahl.Data
         //}
 
 
+        //public string DayOfWeek(DayOfWeek day)
+        //{
+        //    switch(day)
+        //    {
+        //        case (DayOfWeek.Synday)
+        //            return "Söndag";
+        //        case (DayOfWeek.Monday)
+        //            return "Måndag";
+        //        case (DayOfWeek.Tuesday)
+        //            return "Tisdag";
+        //        case (DayOfWeek.Wednesday)
+        //            return "Onsdag";
+        //        case (DayOfWeek.Thursday)
+        //            return "Torsdag";
+        //        case (DayOfWeek.Friday)
+        //            return "Fredag";
+        //        case (DayOfWeek.Saturday)
+        //            return "Lördag";
+        //    }
+        //    return "Fredag";
 
+        //}
 
 
     }

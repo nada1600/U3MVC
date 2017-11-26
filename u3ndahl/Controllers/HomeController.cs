@@ -49,8 +49,11 @@ namespace u3ndahl.Controllers
         }
         public ActionResult _Channel3(int id = 3)
         {
-            var p = po.GetChannel(id);
-            return PartialView(p);    
+            var m = po.GetPrograms();
+            
+            m = po.GetChannel(id);
+            
+            return PartialView(m);    
         }
 
         public ActionResult Channel(int id = 1)
@@ -71,7 +74,12 @@ namespace u3ndahl.Controllers
             var c = po.GetCategory(category);
             return View(c);
         }
+        //[HttpPost]
+        //public ActionResult ShowCategory(Program model)
+        //{
+        //    return View();
+        //}
 
-        
+
     }
 }
