@@ -1,0 +1,22 @@
+﻿@model List<u3ndahl.Models.Program>
+@{
+    ViewBag.Title = "Category";
+}
+
+<h2>Kategori</h2>
+
+
+<ul id="program">
+    @foreach (var p in Model)
+    {
+
+        <li>@p.title @p.channel @p.category</li>
+
+    }
+</ul>
+
+
+<div>
+    
+    @Html.ActionLink("Tillbaka", "Index")
+</div>

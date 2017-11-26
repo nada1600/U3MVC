@@ -66,8 +66,9 @@ namespace u3ndahl.Controllers
             return PartialView(o);
         }
 
-        public ActionResult Category()
+        public ActionResult ShowCategory(string category = "Barn")
         {
+            var c = po.GetCategory(category);
             return View();
         }
 

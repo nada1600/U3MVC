@@ -143,6 +143,7 @@
     <Content Include="Views\Home\Channel.cshtml" />
     <Content Include="Views\Home\_Channel3.cshtml" />
     <Content Include="Views\Home\Channel4.cshtml" />
+    <Content Include="Views\Home\ShowCategory.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
