@@ -49,11 +49,32 @@ namespace u3ndahl.Data
 
         public List<Program> GetCategory(string category)
         {
+            //var n = programs.Where(p => p.category == "Nyheter");
             var result = programs.FindAll(p => p.category == category);
+            if (category == "Nyheter")
+            {
+                //return n.ToList();
+                return result;
+            }
+            else if (category == "Barn")
+            {
+                return result;
+            }
+            else if (category == "Film")
+            {
+                return result;
+            }
+            else if (category == "Kunskap")
+            {
+                return result;
+            }
+            else
             return result;
-        }
 
-        
+        }
+       
+
+
         public Program GetProgramById(int id)
         {
             var result = programs.FirstOrDefault(i => i.id == id);

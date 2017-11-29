@@ -69,7 +69,7 @@ namespace u3ndahl.Controllers
             return PartialView(o);
         }
 
-        public ActionResult ShowCategory(string category = "Nyheter")
+        public ActionResult ShowCategory(string category)
         {
             var c = po.GetCategory(category);
             return View(c);
@@ -79,7 +79,9 @@ namespace u3ndahl.Controllers
         //{
         //    return View();
         //}
+        
 
 
-    }
+
+}
 }

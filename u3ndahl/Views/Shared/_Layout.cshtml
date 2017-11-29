@@ -61,15 +61,17 @@
                 <nav id="second">
                     <a href="#second" id="expand"><img src="~/Photos/expand.png" alt="Vy" /></a>
                     <ul>
-                        <li><a href="@Url.Action("ShowCategory","Home")" class="navlink">Barn</a></li>
-                        <li><a href="@Url.Action("ShowCategory","Home")" class="navlink">Kunskap</a></li>
-                        <li><a href="@Url.Action("ShowCategory","Home")" class="navlink">Serie</a></li>
-                        <li><a href="@Url.Action("ShowCategory","Home")" class="navlink">Film</a></li>
+                        <li><a href="@Url.Action("ShowCategory","Home")" class="navlink" id="barn">Barn</a></li>
+                        <li><a href="@Url.Action("ShowCategory","Home")" class="navlink" id="kunskap">Kunskap</a></li>
+                        <li><a href="@Url.Action("ShowCategory","Home")" class="navlink"id="nyheter">Nyheter</a></li>
+                        <li><a href="@Url.Action("ShowCategory","Home")" class="navlink" id="serie">Serie</a></li>
+                        <li><a href="@Url.Action("ShowCategory","Home")" class="navlink" id="fim">Film</a></li>
                     </ul>
                 </nav>
             </header>
+            @*@Html.ActionLink("Barn", "ShowCategory"*@
         </div>
-
+    
         <!------------------------------------------------------------->
 
 
@@ -84,7 +86,7 @@
         <!-- Sidfot övre -->
         <footer class="upper">
             <section id="kontakt">
-                <h4><a href="about.html">Kontakta oss</h4></a>
+                <h4><a href="about.html">Kontakta oss</a></h4>
             </section>
             <section id="information">
                 <nav>
