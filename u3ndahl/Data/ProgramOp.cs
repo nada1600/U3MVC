@@ -12,25 +12,25 @@ namespace u3ndahl.Data
 
         private List<Program> programs = new List<Program>
             {
-                new Program {id=1, title="Alfons Elefanter", category ="Barn", channel=1, time=18.00 },
-                new Program {id=2, title="Fem myror är fler än fyra elefanter", category ="Barn", channel=1, time=18.30 },
-                new Program {id=3, title="Femte elementet", category ="Film", channel=1, time=20.30 },
-                new Program {id=4, title="Nyheterna", category ="Nyheter", channel=1, time=20.30 },
+                new Program {id=1, title="Alfons Elefanter", category ="Barn", channel=1, time=18.00, date= new DateTime(2017,11,29) },
+                new Program {id=2, title="Fem myror är fler än fyra elefanter", category ="Barn", channel=1, time=18.30, date= new DateTime(2017,11,29) },
+                new Program {id=3, title="Femte elementet", category ="Film", channel=1, time=20.30, date= new DateTime(2017,11,29) },
+                new Program {id=4, title="Nyheterna", category ="Nyheter", channel=1, time=20.30, date= new DateTime(2017,11,29) },
 
-                new Program {id=5, title="The Goonies", category ="Film", channel=2, time=18.00 },
-                new Program {id=6, title="Stargate", category ="Film", channel=2, time=19.30 },
-                new Program {id=7, title="Death Proof", category ="Film", channel=2, time=21.00 },
-                new Program {id=8, title="Indiana Jones", category ="Film", channel=2, time=20.30 },
+                new Program {id=5, title="The Goonies", category ="Film", channel=2, time=18.00, date= new DateTime(2017,11,29) },
+                new Program {id=6, title="Stargate", category ="Film", channel=2, time=19.30, date= new DateTime(2017,11,29) },
+                new Program {id=7, title="Death Proof", category ="Film", channel=2, time=21.00, date= new DateTime(2017,11,29) },
+                new Program {id=8, title="Indiana Jones", category ="Film", channel=2, time=20.30, date= new DateTime(2017,11,29) },
 
-                new Program {id=9, title="Morgonfotöljen", category ="Nyheter", channel=3, time=9.00 },
-                new Program {id=10, title="Loppisfyndarna", category ="Serie", channel=3, time=11.00 },
-                new Program {id=11, title="Sveriges bästa hemmabagare", category ="Serie", channel=3, time=19.00 },
-                new Program {id=12, title="Mytkrossarna", category ="Serie", channel=3, time=20.00 },
+                new Program {id=9, title="Morgonfotöljen", category ="Nyheter", channel=3, time=9.00, date= new DateTime(2017,11,29) },
+                new Program {id=10, title="Loppisfyndarna", category ="Serie", channel=3, time=11.00, date= new DateTime(2017,11,29) },
+                new Program {id=11, title="Sveriges bästa hemmabagare", category ="Serie", channel=3, time=19.00, date= new DateTime(2017,11,29) },
+                new Program {id=12, title="Mytkrossarna", category ="Serie", channel=3, time=20.00, date= new DateTime(2017,11,29) },
 
-                new Program {id=13, title="Vad är PI", category ="Kunskap", channel=4, time=19.00 },
-                new Program {id=14, title="Databasteknik för nybörjare", category ="Kunskap", channel=4, time=20.00 },
-                new Program {id=15, title="Nyhetssändning", category ="Nyheter", channel=4, time=21.00 },
-                new Program {id=16, title="Liftarens guide till galaxen", category ="Film", channel=4, time=21.30 }
+                new Program {id=13, title="Vad är PI", category ="Kunskap", channel=4, time=19.00, date= new DateTime(2017,11,29) },
+                new Program {id=14, title="Databasteknik för nybörjare", category ="Kunskap", channel=4, time=20.00, date= new DateTime(2017,11,29) },
+                new Program {id=15, title="Nyhetssändning", category ="Nyheter", channel=4, time=21.00, date= new DateTime(2017,11,29) },
+                new Program {id=16, title="Liftarens guide till galaxen", category ="Film", channel=4, time=21.30, date= new DateTime(2017,11,29) }
 
             };
 
