@@ -8,7 +8,7 @@
 <div id="date">
     <h3 id="day">
         <strong>
-            @DateTime.Now.DayOfWeek
+            @*@DateTime.Now.DayOfWeek*@
             @DateTime.Now.ToShortDateString()
             @DateTime.Now.ToShortTimeString()
         </strong>
@@ -25,13 +25,7 @@
         <img src="~/Photos/nr1.png" title="Kanal 1" alt="Kanal 1" />
         <h2 id="program">Kanal 1</h2>
         @Html.Partial("Channel")
-        <ul id="program">
-            @*<li>18.00 Alfons elefanter</li>
-            <li>@Model.title @Model.channel</li>
-            <li>18.30 Fem myror är fler än fyra elefanter</li>
-            <li>20.30 Femte elementet</li>
-            <li>22.00 Nyheterna</li>*@
-        </ul>
+        
     </section>
 
     <section>
@@ -44,26 +38,15 @@
     <section>
         <img src="~/Photos/nr3.png" title="Kanal 3" alt="Kanal 3" />
         <h2 id="program">Kanal 3</h2>
-        <ul id="program">
             @Html.Partial("_Channel3")
-            @*<li>09.00 Morgonfotöljen</li>
-            <li>11.00 Loppisfyndarna</li>
-            <li>19.00 Sveriges bästa hemmabagare</li>
-            <li>20.00 Mytkrossarna</li>*@
-        </ul>
+         
     </section>
 
     <section>
         <img src="~/Photos/nr4.png" title="Kanal 4" alt="Kanal 4" />
         <h2 id="program">Kanal 4</h2>
-        <ul id="program">
             @Html.Partial("Channel4")
-            
-            @*<li>19.00 Vad är PI</li>
-            <li>20.00 Databasteknik för nybörjare</li>
-            <li>21.00 Nyhetssändning</li>
-            <li>21.30 Liftarens guide till galaxen</li>*@
-        </ul>
+           
     </section>
     <br />
 

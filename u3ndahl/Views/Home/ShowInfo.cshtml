@@ -4,11 +4,12 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<aside id="programtext">
-    <h2>Programinfo</h2>
-    <ul>
+<div id="programinfo">
+    <h4>Programinfo</h4>
+    <ul id="program">
     <li>Program: <strong> @Model.title</strong></li> 
-    <li>Beskrivning: <strong> @Model.description </strong></li>
+    <li>Beskrivning: </li> 
+    <li><i>@Model.description </i></li>
     <li>Kategori:  <strong> @Model.category </strong></li>
     <li>Visas:  <strong> @Model.date.ToShortDateString() </strong> Klockan:  <strong> @Model.date.ToShortTimeString() </strong></li>
 </ul>
@@ -16,4 +17,4 @@
     <br />
     <br />
 @Html.ActionLink("Tillbaka", "Index")
-</aside>
+</div>

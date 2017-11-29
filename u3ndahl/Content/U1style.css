@@ -118,7 +118,7 @@ ul
 /* Understruken angiven sida*/
 .current
 {
-    color: ffffff;
+    color: #ffffff;
     font-weight: bold;
 }
 
@@ -173,7 +173,7 @@ a:hover
 
 #second
 {
-    float: center;
+    /*float: center;*/
     text-align: center;
     padding: 3px;
     
@@ -264,7 +264,13 @@ article
 #programtext
 {
     float: left;
-    margin: 0% 2% 2% 4%;
+    margin: 6% 2% 2% 4%;
+}
+#programinfo
+{
+    float: left;
+    margin: 6% 2% 2% 4%;
+    width: 55%;
 }
 
 aside
@@ -347,7 +353,7 @@ footer.upper h4, footer.upper a
     margin: 0 1px;
     padding: 2%;
     font-size: 12px;
-    font-weight: strong;
+    font-weight: bold;
     text-align: left;
 }
 

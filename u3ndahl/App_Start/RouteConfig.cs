@@ -28,6 +28,13 @@ namespace u3ndahl
             );
 
             routes.MapRoute(
+                name: "Programinfo",
+                url: "Hem/Programinfo/{title}",
+                //url: "{controller}/{action}/{title}",
+                defaults: new { controller = "Home", action = "ShowInfo", title = "" }
+            );
+
+            routes.MapRoute(
                 name: "None",
                 url: "",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
