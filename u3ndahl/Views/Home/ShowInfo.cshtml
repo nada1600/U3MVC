@@ -1,17 +1,19 @@
 ﻿@model u3ndahl.Models.Program
 @{
-    ViewBag.Title = "ShowInfo";
+    ViewBag.Title = "Programinfo";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-
-<h2>Programinfo</h2>
-
-<div>
-    Program: <strong> @Model.title</strong> <br />
-    Beskrivning: <strong> @Model.description </strong><br />
-    Kategori:  <strong> @Model.category </strong><br />
-    Visas:  <strong> @Model.date.ToShortDateString() </strong><br />
-    Visas:  <strong> @Model.date.ToShortTimeString() </strong><br />
+<aside id="programtext">
+    <h2>Programinfo</h2>
+    <ul>
+    <li>Program: <strong> @Model.title</strong></li> 
+    <li>Beskrivning: <strong> @Model.description </strong></li>
+    <li>Kategori:  <strong> @Model.category </strong></li>
+    <li>Visas:  <strong> @Model.date.ToShortDateString() </strong> Klockan:  <strong> @Model.date.ToShortTimeString() </strong></li>
+</ul>
+    <br />
+    <br />
+    <br />
 @Html.ActionLink("Tillbaka", "Index")
-</div>
+</aside>

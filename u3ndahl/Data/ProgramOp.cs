@@ -12,10 +12,10 @@ namespace u3ndahl.Data
 
         private List<Program> programs = new List<Program>
             {
-                new Program {id=1, title="Alfons Elefanter", category ="Barn", channel=1, time=18.00, date= new DateTime(2017,11,29) },
-                new Program {id=2, title="Fem myror är fler än fyra elefanter", category ="Barn", channel=1, time=18.30, date= new DateTime(2017,11,29) },
-                new Program {id=3, title="Femte elementet", category ="Film", channel=1, time=20.30, date= new DateTime(2017,11,29) },
-                new Program {id=4, title="Nyheterna", category ="Nyheter", channel=1, time=20.30, date= new DateTime(2017,11,29) },
+                new Program {id=1, title="Alfons Elefanter", category ="Barn", channel=1, time=18.00, date= new DateTime(2017,11,29, 18,00,00) },
+                new Program {id=2, title="Fem myror är fler än fyra elefanter", category ="Barn", channel=1, time=18.30, date= new DateTime(2017,11,29, 18,30,00) },
+                new Program {id=3, title="Femte elementet", category ="Film", channel=1, time=20.30, date= new DateTime(2017,11,29, 20,30,00) },
+                new Program {id=4, title="Nyheterna", category ="Nyheter", channel=1, time=22.30, date= new DateTime(2017,11,29,22,30,00) },
 
                 new Program {id=5, title="The Goonies", category ="Film", channel=2, time=18.00, date= new DateTime(2017,11,29) },
                 new Program {id=6, title="Stargate", category ="Film", channel=2, time=19.30, date= new DateTime(2017,11,29) },
