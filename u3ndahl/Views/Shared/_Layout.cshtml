@@ -56,13 +56,14 @@
             </div>
         </header>
 
-        <div class="header2">
+        @*<div class="header2">
             <header id="header2">
                 <nav id="second">
                     <a href="#second" id="expand"><img src="~/Photos/expand.png" alt="Vy" /></a>
                     <ul>
                         <li><a href="@Url.Action("ShowCategory","Home")" class="navlink" id="barn">Barn</a></li>
                         @Html.ActionLink("Barn", "ShowCategory", null, new { category = "Barn" })
+                        @Html.ActionLink("Nyheter", "ShowCategory", "Nyheter", new { category = "Nyheter" })
                         @Html.ActionLink("Nyheter", "ShowCategory", "Nyheter", new { category = "Nyheter" })
                         <li><a href="@Url.Action("ShowCategory","Home")" class="navlink" id="kunskap">Kunskap</a></li>
                         <li><a href="@Url.Action("ShowCategory","Home")" class="navlink"id="nyheter">Nyheter</a></li>
@@ -72,7 +73,7 @@
                 </nav>
             </header>
             
-        </div>
+        </div>*@
 
     
         <!------------------------------------------------------------->
