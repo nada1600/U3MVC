@@ -26,7 +26,7 @@ namespace u3ndahl.Controllers
             var model = po.GetPrograms();
             return PartialView(model);
         }
-        public ActionResult ShowInfo(int id)
+        public ActionResult ShowInfo(int? id)
         {
             var p = po.GetProgramById(id);
             return View(p);

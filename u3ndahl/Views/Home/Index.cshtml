@@ -8,16 +8,25 @@
     <header id="header2">
         <nav id="second">
             <a href="#second" id="expand"><img src="~/Photos/expand.png" alt="Vy" /></a>
-            <ul>
+            <ul id="program">
+                @foreach (var p in Model)
+                {
+
+                    <li>@Html.ActionLink(p.category, "ShowCategory", "Home", new { id = p.category }, null)</li>
+
+                }
+            </ul>
+            @*<ul>
                 <li><a href="@Url.Action("ShowCategory","Home")" class="navlink" id="barn">Barn</a></li>
                 @Html.ActionLink("Barn", "ShowCategory", null, new { category = "Barn" })
                 @Html.ActionLink("Nyheter", "ShowCategory", "Nyheter", new { category = "Nyheter" })
                 @Html.ActionLink("Nyheter", "ShowCategory", "Nyheter", new { category = "Nyheter" })
+                
                 <li><a href="@Url.Action("ShowCategory","Home")" class="navlink" id="kunskap">Kunskap</a></li>
                 <li><a href="@Url.Action("ShowCategory","Home")" class="navlink" id="nyheter">Nyheter</a></li>
                 <li><a href="@Url.Action("ShowCategory","Home")" class="navlink" id="serie">Serie</a></li>
                 <li><a href="@Url.Action("ShowCategory","Home")" class="navlink" id="fim">Film</a></li>
-            </ul>
+            </ul>*@
         </nav>
     </header>
 

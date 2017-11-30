@@ -9,9 +9,7 @@
 <ul id="program">
     @foreach (var p in Model)
     {
-
         <li>@p.category| @p.title @Html.ActionLink("(Info)", "ShowInfo", "Home", new { id = p.id }, null)</li>
-
     }
 </ul>
 

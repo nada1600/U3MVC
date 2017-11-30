@@ -75,7 +75,7 @@ namespace u3ndahl.Data
        
 
 
-        public Program GetProgramById(int id)
+        public Program GetProgramById(int? id)
         {
             var result = programs.FirstOrDefault(i => i.id == id);
             return result;
