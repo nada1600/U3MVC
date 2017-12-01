@@ -4,9 +4,10 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h4>Kontakta oss</h4>
-
-<div>
+<br />
+<h4 id="contact">Kontakta oss</h4>
+<aside class="=contact">
+    
     @using (Html.BeginForm())
     {
         @Html.LabelFor(x => x.Firstname, "Förnamn");<br />
@@ -16,8 +17,8 @@
         @Html.LabelFor(x => x.Text, "Meddelande");<br />
         @Html.TextBoxFor(x => x.Text)<br />
         
-        <button type="submit">Skicka</button>
+        <input type="button" id="submitBtn" value="Skicka">
     }
 
-</div>
+</aside>
 

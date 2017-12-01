@@ -70,7 +70,7 @@ namespace u3ndahl.Controllers
             var p = po.GetChannel(id);
             return PartialView(p);
         }
-        public ActionResult Channel4(int channel = 0)
+        public ActionResult _Channel4(int channel = 0)
         {
             //var p = po.GetChannel(id);
             //return PartialView(p);

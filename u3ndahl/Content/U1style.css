@@ -271,6 +271,10 @@ article
     float: left;
     margin: 6% 2% 2% 4%;
 }
+#programinfo p
+{
+    text-align: justify;
+}
 #programinfo
 {
     float: left;
@@ -281,12 +285,16 @@ article
 aside
 {
     float: left;
-    margin: 8% 2% 0% 4%;
+    margin: 4% 2% 2% 4%;
 }
-
+#contact
+{
+    margin: 8% 4% 1% 4%;
+}
 .contact
 {
-    margin-bottom: 4%;
+    margin-bottom: 15%;
+    /*margin: 1% 4% 15% 4%;*/
 }
 /* KONTAKTFORMULÄR -- UPPGIFT 2 -- */
 fieldset

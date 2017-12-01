@@ -9,7 +9,7 @@
         <nav id="second">
             <a href="#second" id="expand"><img src="~/Photos/expand.png" alt="Vy" /></a>
             <ul>
-                @*@Model.Select(x => x.Author).Distinct();*@
+                @Model.Select(x => x.category).Distinct();
 
                 @*@foreach (var p in Model.Select(k => k.category).Distinct())
                     {
@@ -17,12 +17,12 @@
 
                     }*@
 
-                @foreach (var p in Model)
+                @*@foreach (var p in Model)
                     {
 
                     <li>@Html.ActionLink(p.category, "ShowCategory", "Home", new { category = p.category }, null)</li>
 
-                    }
+                    }*@
                 
                        <li> @Html.ActionLink("Film", "ShowCategory", "Home", new { category = Model.FindAll(p => p.category == "Film") }, null)</li>
                        <li> @Html.ActionLink("Nyheter", "ShowCategory", "Home", new { category = Model.FindAll(p => p.category == "Nyheter") }, null)</li>
@@ -83,7 +83,7 @@
     <section>
         <img src="~/Photos/nr4.png" title="Kanal 4" alt="Kanal 4" />
         <h2 id="program">Kanal 4</h2>
-            @Html.Partial("Channel4")
+            @Html.Partial("_Channel4")
            
     </section>
     <br />

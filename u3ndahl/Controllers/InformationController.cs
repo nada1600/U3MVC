@@ -20,5 +20,10 @@ namespace u3ndahl.Controllers
         {
             return View();
         }
+
+        public ActionResult About()
+        {
+            return View();
+        }
     }
 }

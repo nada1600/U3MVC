@@ -144,10 +144,11 @@
     <Content Include="Views\Home\ShowInfo.cshtml" />
     <Content Include="Views\Home\Channel.cshtml" />
     <Content Include="Views\Home\_Channel3.cshtml" />
-    <Content Include="Views\Home\Channel4.cshtml" />
+    <Content Include="Views\Home\_Channel4.cshtml" />
     <Content Include="Views\Home\ShowCategory.cshtml" />
     <Content Include="Views\Home\_Channel2.cshtml" />
     <Content Include="Views\Information\Contact.cshtml" />
+    <Content Include="Views\Information\About.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

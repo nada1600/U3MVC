@@ -35,6 +35,18 @@ namespace u3ndahl
             );
 
             routes.MapRoute(
+                name: "Contact",
+                url: "Kontakt",
+                defaults: new { controller = "Information", action = "Contact", id = UrlParameter.Optional }
+            );
+
+            routes.MapRoute(
+                name: "About",
+                url: "Om",
+                defaults: new { controller = "Information", action = "About", id = UrlParameter.Optional }
+            );
+
+            routes.MapRoute(
                 name: "None",
                 url: "",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
