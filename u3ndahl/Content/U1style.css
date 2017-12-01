@@ -185,6 +185,11 @@ a:hover
     margin: 10px;
     padding: 6px;
 }
+#second li a
+{
+    /*color:  #333333;*/
+    color: black;
+}
 
 /* SÖKRUTA -- UPPGIFT 2 -- */
 #searchArea {
@@ -399,15 +404,16 @@ footer.under p
     #first
     {
         display: inline;
-    }
-
+        float: right;
+    }  
+    
     #menu-icon 
     {
         display: inline;
     }
     #menu-icon img
     {
-        max-height: 50%;
+        max-height: 38px;
     }
 
     #first:hover ul
@@ -418,6 +424,7 @@ footer.under p
     #first ul, ul:active ul
     {   
         display: none;
+        text-align: left;
         position: absolute;
         background: lightgray;
         border: 1px dotted #ffffff;
@@ -426,11 +433,20 @@ footer.under p
         border-radius: 2px;
         padding: 1px;
     }
+    .navlink img
+    {
+        display: none;
+    }
+    .navlink p
+    {
+        text-align: left;
+        float: left;
+    }
 
     #first li a
     {
         text-align: left;
-        width: 50%;
+        /*width: 50%;*/
         padding: 5px 0 0 0;
         margin: 0;
     }
