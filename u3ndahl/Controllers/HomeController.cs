@@ -73,6 +73,8 @@ namespace u3ndahl.Controllers
         {
             var c = po.GetCategory(category);
             return View(c);
+            //var c = po.GetNavCategory(category);
+            //return PartialView(c);
         }
         //[HttpPost]
         //public ActionResult ShowCategory(Program model)

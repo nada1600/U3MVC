@@ -9,12 +9,14 @@
         <nav id="second">
             <a href="#second" id="expand"><img src="~/Photos/expand.png" alt="Vy" /></a>
             <ul id="program">
-                @foreach (var p in Model)
+                @*@foreach (var p in Model)
                 {
 
-                    <li>@Html.ActionLink(p.category, "ShowCategory", "Home", new { id = p.category }, null)</li>
+                    <li>@Html.ActionLink(p.category, "ShowCategory", "Home", new { id = p.id }, null)</li>
 
-                }
+                }*@
+                @Html.ActionLink("Film", "ShowCategory", "Home", new { category = Model.FindAll(p => p.category == "Film") }, null)
+                @Html.ActionLink("Nyheter", "ShowCategory", "Home", new { category = Model.FindAll(p => p.category == "Nyheter") }, null)
             </ul>
             @*<ul>
                 <li><a href="@Url.Action("ShowCategory","Home")" class="navlink" id="barn">Barn</a></li>
