@@ -4,12 +4,14 @@
 }
 
 <h2>Kategori</h2>
+@Html.DisplayForModel("category".ToString())
+
 @*@Html.DropDownListFor()*@
 
 <ul id="program">
     @foreach (var p in Model)
     {
-        <li>@p.category| @p.title @Html.ActionLink("(Info)", "ShowInfo", "Home", new { id = p.id }, null)</li>
+        <li>@p.category| @p.channel || @p.date | @p.title @Html.ActionLink("(Info)", "ShowInfo", "Home", new { id = p.id }, null)</li>
     }
 </ul>
 

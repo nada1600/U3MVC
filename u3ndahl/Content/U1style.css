@@ -175,7 +175,7 @@ a:hover
 {
     /*float: center;*/
     text-align: center;
-    padding: 3px;
+    padding: 12px;
     
 }
 
@@ -188,6 +188,11 @@ a:hover
 #second li a
 {
     /*color:  #333333;*/
+    color: black;
+}
+.category
+{
+    margin-top: 4%;
     color: black;
 }
 

@@ -1,4 +1,6 @@
 ﻿@model List<u3ndahl.Models.Program>
+@*@model IEnumerable<u3ndahl.Models.Program>*@
+
 @{
     ViewBag.Title = "Tablå";
 }
@@ -9,13 +11,13 @@
         <nav id="second">
             <a href="#second" id="expand"><img src="~/Photos/expand.png" alt="Vy" /></a>
             <ul>
-                @Model.Select(x => x.category).Distinct();
+                @*@Model.Select(x => x.category).Distinct();*@
+                | @Html.ActionLink("Barn", "ShowCategory", new { category = "Barn" }, new { @class = "category" }) |
+                @Html.ActionLink("Nyheter", "ShowCategory", new { category = "Nyheter" }, new { @class = "category" }) |
+                @Html.ActionLink("Kunskap", "ShowCategory", new { category = "Kunskap" }, new { @class = "category" }) |
+                @Html.ActionLink("Serie", "ShowCategory", new { category = "Serie" }, new { @class = "category" }) |
+                @Html.ActionLink("Film", "ShowCategory", new { category = "Film" }, new { @class = "category" }) |
 
-                @*@foreach (var p in Model.Select(k => k.category).Distinct())
-                    {
-                    <li>@Html.ActionLink("Namn", "ShowCategory", "Home", null</li>
-
-                    }*@
 
                 @*@foreach (var p in Model)
                     {
@@ -24,8 +26,8 @@
 
                     }*@
                 
-                       <li> @Html.ActionLink("Film", "ShowCategory", "Home", new { category = Model.FindAll(p => p.category == "Film") }, null)</li>
-                       <li> @Html.ActionLink("Nyheter", "ShowCategory", "Home", new { category = Model.FindAll(p => p.category == "Nyheter") }, null)</li>
+                       @*<li> @Html.ActionLink("Film", "ShowCategory", "Home", new { category = Model.FindAll(p => p.category == "Film") }, null)</li>
+                       <li> @Html.ActionLink("Nyheter", "ShowCategory", "Home", new { category = Model.FindAll(p => p.category == "Nyheter") }, null)</li>*@
                        @*<li> @Html.ActionLink("Nyheter", "ShowCategory", "Home", new { category =  }, null)</li>*@
                     </ul>
                     @*<ul>
