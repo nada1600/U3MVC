@@ -119,10 +119,12 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\CategoryController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\InformationController.cs" />
     <Compile Include="Data\ProgramOp.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Message.cs" />
     <Compile Include="Models\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -145,6 +147,7 @@
     <Content Include="Views\Home\Channel4.cshtml" />
     <Content Include="Views\Home\ShowCategory.cshtml" />
     <Content Include="Views\Home\_Channel2.cshtml" />
+    <Content Include="Views\Information\Contact.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

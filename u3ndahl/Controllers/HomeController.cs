@@ -18,9 +18,18 @@ namespace u3ndahl.Controllers
             //return View();
             var model = po.GetPrograms();
             return View(model);
-
         }
 
+        public List<Program> UniqueCategory()
+        {
+            var u = po.GetUnique();
+            return u;
+        }
+        public ActionResult Unique()
+        {
+            var u = po.GetUnique();
+            return View(u);
+        }
         public ActionResult ShowProgram()
         {
             var model = po.GetPrograms();

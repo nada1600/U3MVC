@@ -1,0 +1,23 @@
+﻿@model u3ndahl.Models.Message
+@{
+    ViewBag.Title = "Kontakta oss";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h4>Kontakta oss</h4>
+
+<div>
+    @using (Html.BeginForm())
+    {
+        @Html.LabelFor(x => x.Firstname, "Förnamn");<br />
+        @Html.TextBoxFor(x => x.Firstname)<br />
+        @Html.LabelFor(x => x.Email, "Email");<br />
+        @Html.TextBoxFor(x => x.Email)<br />
+        @Html.LabelFor(x => x.Text, "Meddelande");<br />
+        @Html.TextBoxFor(x => x.Text)<br />
+        
+        <button type="submit">Skicka</button>
+    }
+
+</div>
+

@@ -8,7 +8,8 @@ namespace u3ndahl.Data
 {
     public class ProgramOp
     {
-        List<Program> programList = new List<Program>(); 
+        List<Program> programList = new List<Program>();
+        
 
         private List<Program> programs = new List<Program>
             {
@@ -39,6 +40,17 @@ namespace u3ndahl.Data
             return programs;
         }
 
+        public List<Program>GetUnique()
+        {
+            var DistinctItems = programs.GroupBy(x => x.category).Select(y => y.First());
+
+            foreach (var item in DistinctItems)
+            {
+                programList.Add(item);
+            }
+            return DistinctItems.ToList();
+        }
+
 
         public List<Program> GetChannel(int channel)
         {
@@ -49,7 +61,7 @@ namespace u3ndahl.Data
 
         public List<Program> GetCategory(string category)
         {
-            var result = programs.FindAll(p => p.category == "Nyheter");
+            var result = programs.FindAll(p => p.category == category);
             //if (category == "Nyheter")
             //{
             //    //return n.ToList();
@@ -78,7 +90,6 @@ namespace u3ndahl.Data
             return result;
 
         }
-
 
 
         public Program GetProgramById(int? id)

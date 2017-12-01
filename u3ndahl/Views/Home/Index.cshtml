@@ -9,15 +9,24 @@
         <nav id="second">
             <a href="#second" id="expand"><img src="~/Photos/expand.png" alt="Vy" /></a>
             <ul>
-                @*@foreach (var p in Model)
-            {
+                @*@Model.Select(x => x.Author).Distinct();*@
 
-                <li>@Html.ActionLink(p.category, "ShowCategory", "Home", new { id = p.id }, null)</li>
+                @*@foreach (var p in Model.Select(k => k.category).Distinct())
+                    {
+                    <li>@Html.ActionLink("Namn", "ShowCategory", "Home", null</li>
 
-            }*@
+                    }*@
+
+                @foreach (var p in Model)
+                    {
+
+                    <li>@Html.ActionLink(p.category, "ShowCategory", "Home", new { category = p.category }, null)</li>
+
+                    }
                 
                        <li> @Html.ActionLink("Film", "ShowCategory", "Home", new { category = Model.FindAll(p => p.category == "Film") }, null)</li>
                        <li> @Html.ActionLink("Nyheter", "ShowCategory", "Home", new { category = Model.FindAll(p => p.category == "Nyheter") }, null)</li>
+                       @*<li> @Html.ActionLink("Nyheter", "ShowCategory", "Home", new { category =  }, null)</li>*@
                     </ul>
                     @*<ul>
                     <li><a href="@Url.Action("ShowCategory","Home")" class="navlink" id="barn">Barn</a></li>
