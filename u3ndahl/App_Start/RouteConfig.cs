@@ -24,7 +24,7 @@ namespace u3ndahl
             routes.MapRoute(
                 name: "Category",
                 url: "Kategori",
-                defaults: new { controller = "Home", action = "Category", id = UrlParameter.Optional }
+                defaults: new { controller = "Home", action = "ShowCategory", id = UrlParameter.Optional }
             );
 
             routes.MapRoute(
