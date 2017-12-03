@@ -5,7 +5,7 @@
     @foreach (var p in Model)
     {
 
-        <li>@p.time.ToString("00.00")| @p.title @Html.ActionLink("(Info)", "ShowInfo", "Home", new { id = p.id }, null)</li> 
+        <li>@p.title @Html.ActionLink("(Info)", "ShowInfo", "Home", new { id = p.id }, null)</li> 
 
     }
 </ul>

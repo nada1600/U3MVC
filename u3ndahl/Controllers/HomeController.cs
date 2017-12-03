@@ -15,24 +15,15 @@ namespace u3ndahl.Controllers
         // GET: Home
         public ActionResult Index()
         {
-            //return View();
             var model = po.GetPrograms();
             return View(model);
         }
 
-        public List<Program> UniqueCategory()
-        {
-            var u = po.GetUnique();
-            return u;
-        }
-        public ActionResult Unique()
-        {
-            var u = po.GetUnique();
-            return View(u);
-        }
         public ActionResult ShowProgram()
         {
+            //Sortera programlistan (A-Ö)
             var model = po.GetPrograms();
+         
             return PartialView(model);
         }
         public ActionResult ShowInfo(int? id)
@@ -45,7 +36,7 @@ namespace u3ndahl.Controllers
         //    return "Kanal 1";
         //}
 
-        public ActionResult Channel(int channel)
+        public ActionResult _Channel(int channel)
         {
             var p = po.GetChannel(channel);
             return PartialView(p);
@@ -57,6 +48,11 @@ namespace u3ndahl.Controllers
             return View(c);
             //var c = po.GetNavCategory(category);
             //return PartialView(c);
+        }
+
+        public ActionResult ShowCategoryByChannel(string category, int channel)
+        {
+            return View();
         }
         //[HttpPost]
         //public ActionResult ShowCategory(Program model)
