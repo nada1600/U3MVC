@@ -1,11 +1,13 @@
 ﻿@model List<u3ndahl.Models.Program>
 @*@model IEnumerable<u3ndahl.Models.Program>*@
+<!--Viktigt att komma ihåg mellanrummet mellan model och u3ndahl + litet m...-->
+@*@model u3ndahl.Models.Program*@
 
 @{
     ViewBag.Title = "Tablå";
 }
-<!--Viktigt att komma ihåg mellanrummet mellan model och u3ndahl + litet m...-->
-@*@model u3ndahl.Models.Program*@
+
+<!--------------------------------------------Header2 PROGRAM-KATEGORIER------------------------------------------------>
 <div class="header2">
     <header id="header2">
         <nav id="second">
@@ -17,34 +19,13 @@
                 @Html.ActionLink("Kunskap", "ShowCategory", new { category = "Kunskap" }, new { @class = "category" }) |
                 @Html.ActionLink("Serie", "ShowCategory", new { category = "Serie" }, new { @class = "category" }) |
                 @Html.ActionLink("Film", "ShowCategory", new { category = "Film" }, new { @class = "category" }) |
-
-
-                @*@foreach (var p in Model)
-                    {
-
-                    <li>@Html.ActionLink(p.category, "ShowCategory", "Home", new { category = p.category }, null)</li>
-
-                    }*@
-                
-                       @*<li> @Html.ActionLink("Film", "ShowCategory", "Home", new { category = Model.FindAll(p => p.category == "Film") }, null)</li>
-                       <li> @Html.ActionLink("Nyheter", "ShowCategory", "Home", new { category = Model.FindAll(p => p.category == "Nyheter") }, null)</li>*@
-                       @*<li> @Html.ActionLink("Nyheter", "ShowCategory", "Home", new { category =  }, null)</li>*@
-                    </ul>
-                    @*<ul>
-                    <li><a href="@Url.Action("ShowCategory","Home")" class="navlink" id="barn">Barn</a></li>
-                    @Html.ActionLink("Barn", "ShowCategory", null, new { category = "Barn" })
-                    @Html.ActionLink("Nyheter", "ShowCategory", "Nyheter", new { category = "Nyheter" })
-                    @Html.ActionLink("Nyheter", "ShowCategory", "Nyheter", new { category = "Nyheter" })
-
-                    <li><a href="@Url.Action("ShowCategory","Home")" class="navlink" id="kunskap">Kunskap</a></li>
-                    <li><a href="@Url.Action("ShowCategory","Home")" class="navlink" id="nyheter">Nyheter</a></li>
-                    <li><a href="@Url.Action("ShowCategory","Home")" class="navlink" id="serie">Serie</a></li>
-                    <li><a href="@Url.Action("ShowCategory","Home")" class="navlink" id="fim">Film</a></li>
-                </ul>*@
-                </nav>
-</header>
-
+            </ul>
+        </nav>
+    </header>
 </div>
+<!--------------------------------------------------HEADER2 SLUT--------------------------------------------------------->
+
+
 <div id="date">
     <h3 id="day">
         <strong>
@@ -54,44 +35,28 @@
         </strong>
     </h3>
 </div>
-    <!--Viktigt att komma ihåg stort M...-->
-    @*@*Model.title och
-        @Model.channel*@
-
 
 
     <!-- Sektioner med ikoner för de olika kanalerna -->
     <section>
         <img src="~/Photos/nr1.png" title="Kanal 1" alt="Kanal 1" />
-        <h2 id="program">Kanal 1</h2>
+        @*<h2 id="program">Kanal 1</h2>*@
         @*@Html.Partial("Channel")*@
-        @*@Html.Partial("Channel", new List<Program> { { "channel", 1 } });*@
-        @Html.Action("Channel", "Home", new { channel = 1 })
-        
+        @Html.Action("Channel", "Home", new { channel = 1 })     
     </section>
 
     <section>
-        <img src="~/Photos/nr2.png" title="Kanal 2" alt="Kanal 2" />
-        <h2 id="program">Kanal 2</h2>
-        @*@Html.Partial("_Channel2")*@
+        <img src="~/Photos/nr2.png" title="Kanal 2" alt="Kanal 2" />      
         @Html.Action("Channel", "Home", new { channel = 2 })
     </section>
 
-
     <section>
         <img src="~/Photos/nr3.png" title="Kanal 3" alt="Kanal 3" />
-        <h2 id="program">Kanal 3</h2>
-        @*@Html.Partial("_Channel3")*@
-        @Html.Action("Channel", "Home", new { channel = 3 })
-         
+        @Html.Action("Channel", "Home", new { channel = 3 })    
     </section>
 
     <section>
         <img src="~/Photos/nr4.png" title="Kanal 4" alt="Kanal 4" />
-        <h2 id="program">Kanal 4</h2>
-        @*@Html.Partial("_Channel4")*@
-        @Html.Action("Channel", "Home", new { channel = 4 })
-           
+        @Html.Action("Channel", "Home", new { channel = 4 })       
     </section>
-    <br />
 
