@@ -138,15 +138,11 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Home\_Channel1.cshtml" />
     <Content Include="Views\Shared\_ChannelLayout.cshtml" />
     <Content Include="Views\Home\ShowProgram.cshtml" />
     <Content Include="Views\Home\ShowInfo.cshtml" />
     <Content Include="Views\Home\Channel.cshtml" />
-    <Content Include="Views\Home\_Channel3.cshtml" />
-    <Content Include="Views\Home\_Channel4.cshtml" />
     <Content Include="Views\Home\ShowCategory.cshtml" />
-    <Content Include="Views\Home\_Channel2.cshtml" />
     <Content Include="Views\Information\Contact.cshtml" />
     <Content Include="Views\Information\About.cshtml" />
     <None Include="Web.Debug.config">

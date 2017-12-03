@@ -40,42 +40,15 @@ namespace u3ndahl.Controllers
             var p = po.GetProgramById(id);
             return View(p);
         }
-        public string Chann()
-        {
-            return "Kanal 1";
-        }
-        public ActionResult _Channel1(int id = 1)
-        {
-            var model = po.GetChannel(id);
-
-            return View(model);
-            //return PartialView();      
-        }
-        public ActionResult _Channel2(int id = 2)
-        {
-            var model = po.GetChannel(id);
-            return PartialView(model);      
-        }
-        public ActionResult _Channel3(int id = 3)
-        {
-            var m = po.GetPrograms();
-            
-            m = po.GetChannel(id);
-            
-            return PartialView(m);    
-        }
+        //public string Chann()
+        //{
+        //    return "Kanal 1";
+        //}
 
         public ActionResult Channel(int channel)
         {
             var p = po.GetChannel(channel);
             return PartialView(p);
-        }
-        public ActionResult _Channel4(int channel = 0)
-        {
-            //var p = po.GetChannel(id);
-            //return PartialView(p);
-            var o = po.GetC(1);
-            return PartialView(o);
         }
 
         public ActionResult ShowCategory(string category)
