@@ -6,7 +6,7 @@
 
 <div>
     <ul id="program">
-        @foreach (var p in Model.Where(c => c.channel == 1))
+        @foreach (var p in Model)
         {
 
             <li>@p.date.ToShortTimeString()| @p.title @Html.ActionLink("(Info)", "ShowInfo", "Home", new { id = p.id }, null)</li>

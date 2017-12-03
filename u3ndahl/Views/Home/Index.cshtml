@@ -64,29 +64,33 @@
     <section>
         <img src="~/Photos/nr1.png" title="Kanal 1" alt="Kanal 1" />
         <h2 id="program">Kanal 1</h2>
-        @Html.Partial("Channel")
-        
+        @*@Html.Partial("Channel")*@
+        @*@Html.Partial("Channel", new List<Program> { { "channel", 1 } });*@
+        @Html.Action("Channel", "Home", new { channel = 1 })
         
     </section>
 
     <section>
         <img src="~/Photos/nr2.png" title="Kanal 2" alt="Kanal 2" />
         <h2 id="program">Kanal 2</h2>
-       @Html.Partial("_Channel2")
+        @*@Html.Partial("_Channel2")*@
+        @Html.Action("Channel", "Home", new { channel = 2 })
     </section>
 
 
     <section>
         <img src="~/Photos/nr3.png" title="Kanal 3" alt="Kanal 3" />
         <h2 id="program">Kanal 3</h2>
-            @Html.Partial("_Channel3")
+        @*@Html.Partial("_Channel3")*@
+        @Html.Action("Channel", "Home", new { channel = 3 })
          
     </section>
 
     <section>
         <img src="~/Photos/nr4.png" title="Kanal 4" alt="Kanal 4" />
         <h2 id="program">Kanal 4</h2>
-            @Html.Partial("_Channel4")
+        @*@Html.Partial("_Channel4")*@
+        @Html.Action("Channel", "Home", new { channel = 4 })
            
     </section>
     <br />
