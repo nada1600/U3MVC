@@ -145,6 +145,7 @@
     <Content Include="Views\Home\ShowCategory.cshtml" />
     <Content Include="Views\Information\Contact.cshtml" />
     <Content Include="Views\Information\About.cshtml" />
+    <Content Include="Views\Home\ShowCategoryByChannel.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

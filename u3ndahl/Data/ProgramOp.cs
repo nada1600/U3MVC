@@ -70,57 +70,14 @@ namespace u3ndahl.Data
         public List<Program> GetCategory(string category)
         {
             var result = programs.FindAll(p => p.category == category);
-            //if (category == "Nyheter")
-            //{
-            //    //return n.ToList();
-            //    return result;
-            //}
-            //else if (category == "Barn")
-            //{
-            //    return result;
-            //}
-            //else if (category == "Film")
-            //{
-            //    return result;
-            //}
-            //else if (category == "Kunskap")
-            //{
-            //    return result;
-            //}
-            //else
             return result;
 
         }
-        public Program GetNavCategory(string category)
-        {
-            //var n = programs.Where(p => p.category == "Nyheter");
-            var result = programs.FirstOrDefault(p => p.category == category);
-            return result;
-
-        }
-
 
         public Program GetProgramById(int? id)
         {
             var result = programs.FirstOrDefault(i => i.id == id);
             return result;
-        }
-
-
-        //FL1
-        public Program GetProgram()
-        {
-            Program p = new Program()
-            {
-                title = "Hej",
-                channel = 1
-            };
-            //if (p.channel == 1)
-            //{
-            //    return p; 
-            //}
-
-            return p;
         }
 
 
@@ -151,6 +108,12 @@ namespace u3ndahl.Data
 
         }
 
+        public List<Program> GetChannelAndCategory(int channel, string category)
+        {
+            var result = programs.FindAll(c => (c.channel == channel && c.category == category));
+
+            return result;
+        }
 
 
         //List<Program> kanal1 = new List<Program>();

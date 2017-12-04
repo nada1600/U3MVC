@@ -50,10 +50,17 @@ namespace u3ndahl.Controllers
             //return PartialView(c);
         }
 
-        public ActionResult ShowCategoryByChannel(string category, int channel)
+        public ActionResult ShowCategoryByChannel(int channel, string category)
         {
-            return View();
+            var cc = po.GetChannelAndCategory(channel, category);
+            return PartialView(cc);
         }
+
+        //public string CheckRadio(FormCollection frm)
+        //{
+        //    string categoryradio = frm["Category"].ToString();
+        //    return categoryradio;
+        //}
         //[HttpPost]
         //public ActionResult ShowCategory(Program model)
         //{
