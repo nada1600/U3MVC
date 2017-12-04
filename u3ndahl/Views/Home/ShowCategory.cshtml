@@ -7,16 +7,33 @@
 @*@Html.DisplayForModel("category")*@
 @*@Html.DisplayNameForModel("category")*@
 @*@Html.DisplayNameFor(model => model.Program.category);*@
+<table class="table table-responsive table-hover">
+    <tr>
+        <th>Kategori</th>
+        <th>Kanal</th>
+        <th>Program</th>
+        <th>Datum & tid</th>
+    </tr>
+    @foreach (var p in Model)
+    {
+        <tr>
+            <td>@p.category</td> 
+            <td>@p.channel</td>
+            <td>@p.title @Html.ActionLink("(Mer info)", "ShowInfo", "Home", new { id = p.id }, null)</td>
+            <td>@p.date </td>
+        </tr>
+    }
+</table>
 
 
-<ul id="program">
+@*<ul id="program">
     @foreach (var p in Model)
     {
         
         <li>@p.category| @p.channel || @p.date | @p.title @Html.ActionLink("(Info)", "ShowInfo", "Home", new { id = p.id }, null)</li>
     }
 
-</ul>
+</ul>*@
 
 
 
