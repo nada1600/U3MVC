@@ -2,7 +2,7 @@
 * JavaScript
 */
 /* --- Dagens VECKODAG + DATUM -------- */
-function myDay() {
+window.onload = function myDay() {
     var d = new Date();
     var weekday = new Array(7);
     weekday[0] = "Söndag";

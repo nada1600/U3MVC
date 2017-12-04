@@ -7,6 +7,7 @@
     ViewBag.Title = "Tablå";
 }
 
+
 <!--------------------------------------------Header2 PROGRAM-KATEGORIER------------------------------------------------>
 <div class="header2">
     <header id="header2">
@@ -27,8 +28,8 @@
 
 
 <div class="date">
-    
-        <h3 id="day"></h3>
+<!--Får felmeddelande då javascriptet endast ska köras på "startsidan".-->    
+        @*<h3 id="day"></h3>*@
         <h3 id="datetime">
                 @*@DateTime.Now.DayOfWeek*@
               | @DateTime.Now.ToShortDateString() |

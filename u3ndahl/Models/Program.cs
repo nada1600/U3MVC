@@ -14,7 +14,7 @@ namespace u3ndahl.Models
         public int channel { get; set; }
         public int length { get; set; }
         public DateTime date { get; set; }
-        public List<Program> programL { get; set; }
+        
 
 
     }
