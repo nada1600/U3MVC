@@ -26,14 +26,15 @@
 <!--------------------------------------------------HEADER2 SLUT--------------------------------------------------------->
 
 
-<div id="date">
-    <h3 id="day">
-        <strong>
-            @DateTime.Now.DayOfWeek(new CultureInfo("fr-FR"))
-            @DateTime.Now.ToShortDateString()
-            @DateTime.Now.ToShortTimeString()
-        </strong>
-    </h3>
+<div class="date">
+    
+        <h3 id="day"></h3>
+        <h3 id="datetime">
+                @*@DateTime.Now.DayOfWeek*@
+              | @DateTime.Now.ToShortDateString() |
+                @DateTime.Now.ToShortTimeString()  |
+        </h3>
+    
 </div>
 
 

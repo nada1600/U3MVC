@@ -161,14 +161,34 @@ a:hover
 }
 */
 
-#date h3
+.date
 {
-    text-align: center;
+    /*text-align: center;
     text-decoration: none;
     color: grey;
-    font-size: 120%;
-    line-height: 120%;
-    padding: 6% 0 0 0;
+    font-size: 50%;
+    /*line-height: 120%;*/
+    /*padding: 0;*/
+    margin: 0%;
+}
+
+#day
+{
+    text-decoration: none;
+    font-weight: bold;
+    color: grey;
+    font-size: 100%;
+    padding: 8% 0 0 0;
+    text-align:center;  
+    
+}
+#datetime
+{
+    text-decoration: none;
+    color: grey;
+    font-size: 100%;
+    padding-top: 0%;
+    text-align:center;
 }
 
 #second
@@ -232,7 +252,7 @@ section
 {
     float: left;
     width: 22%;
-    margin: 3% 1%;
+    margin: 1% 1%;
     text-align: left;
     padding: 8px;
 }
@@ -523,6 +543,20 @@ footer.under p
         margin: 50px 0 15px 1%;
     }
 
+    #day
+    {
+        float: left;
+        font-size: 90%;
+        /*margin: 50px 0 15px 1%;*/
+        padding: 50px 0 0 1%;
+    }
+    #datetime
+    {
+        text-align: left;
+        font-size: 85%;
+        padding: 90px 0 0 1%;
+    }
+
    section
     {
         float: left;
@@ -631,6 +665,20 @@ footer.under p
     {
         float: left;
         margin: 7% 0 0 1%;
+    }
+
+    #day
+    {
+        float: left;
+        font-size: 90%;
+        /*margin: 50px 0 15px 1%;*/
+        padding: 50px 0 0 1%;
+    }
+    #datetime
+    {
+        text-align: left;
+        font-size: 85%;
+        padding: 90px 0 0 1%;
     }
     
     article

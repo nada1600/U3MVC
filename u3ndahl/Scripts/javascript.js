@@ -13,7 +13,7 @@ function myDay() {
     weekday[5] = "Fredag";
     weekday[6] = "Lördag";
 
-    var n = weekday[d.getDay()] + " " + d.getDate() + "/" + d.getMonth();
+    var n = weekday[d.getDay()];
     document.getElementById("day").innerHTML = n;
 }
 
@@ -78,21 +78,4 @@ $("#submitBtn").click(function validateF() {
     }
 });
 
-//Validering för email.
-function validateEmail(email){
-    var reg = /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-    if (reg.test(email.value) == false) 
-    {
-        alert("Fel")
-        return false;
-    }
-    return true;
-
-}
-
-
-
-
-
-});
 
