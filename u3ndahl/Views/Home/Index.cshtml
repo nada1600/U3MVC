@@ -11,18 +11,7 @@
 <div class="header2">
     <header id="header2">
         <nav id="second">
-            <a href="#second" id="expand"><img src="~/Photos/expand.png" alt="Vy" /></a>
-
-            @*@using (Html.BeginForm("CheckRadio", "Home", FormMethod.Post))
-                    {
-            <div>
-                Barn @Html.RadioButton("Barn", "Barn", new { @class = "category", @id = "barn" })
-                Nyheter @Html.RadioButton("Nyheter", "Nyheter", new { @class = "category", @id = "nyheter" })
-
-            </div>
-                        <input type="submit" value="submit" />
-        }*@
-            
+            <a href="#second" id="expand"><img src="~/Photos/expand.png" alt="Vy" /></a>           
             <ul>
                 @*@Model.Select(x => x.category).Distinct();*@
                 | @Html.ActionLink("Barn", "ShowCategory", new { category = "Barn" }, new { @class = "category", @id = "barn" }) |
@@ -51,7 +40,6 @@
     <!-- Sektioner med ikoner för de olika kanalerna -->
     <section>
         <img src="~/Photos/nr1.png" title="Kanal 1" alt="Kanal 1" />
-        @*<h2 id="program">Kanal 1</h2>*@
         @*@Html.Partial("Channel")*@
         @Html.Action("_Channel", "Home", new { channel = 1 })   
         @*@Html.Action("ShowCategoryByChannel", "Home", new { channel = 1, category = "" })*@ 
