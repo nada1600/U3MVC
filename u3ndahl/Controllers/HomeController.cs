@@ -56,19 +56,21 @@ namespace u3ndahl.Controllers
             return PartialView(cc);
         }
 
-        //public string CheckRadio(FormCollection frm)
-        //{
-        //    string categoryradio = frm["Category"].ToString();
-        //    return categoryradio;
-        //}
+        public string CheckRadio(FormCollection frm)
+        {
+            string categoryradio = frm["Category"].ToString();
+            return categoryradio;
+        }
+
+
         //[HttpPost]
         //public ActionResult ShowCategory(Program model)
         //{
         //    return View();
         //}
-        
 
 
 
-}
+
+    }
 }

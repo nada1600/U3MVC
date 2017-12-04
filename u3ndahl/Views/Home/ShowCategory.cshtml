@@ -1,25 +1,28 @@
 ﻿@model List<u3ndahl.Models.Program>
 @{
-    ViewBag.Title = "Category";
+    ViewBag.Title = "Kategori";
 }
 
-<h2>Kategori</h2>
-@Html.DisplayForModel("category".ToString())
+<h2><strong>Kategori</strong></h2>
+@*@Html.DisplayForModel("category")*@
+@*@Html.DisplayNameForModel("category")*@
+@*@Html.DisplayNameFor(model => model.Program.category);*@
 
-@*@Html.DropDownListFor()*@
 
 <ul id="program">
     @foreach (var p in Model)
     {
+        
         <li>@p.category| @p.channel || @p.date | @p.title @Html.ActionLink("(Info)", "ShowInfo", "Home", new { id = p.id }, null)</li>
     }
+
 </ul>
 
 
 
 
 
-<div>
+<div id="back">
     
     @Html.ActionLink("Tillbaka", "Index")
 </div>
