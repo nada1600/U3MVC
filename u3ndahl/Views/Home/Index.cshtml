@@ -29,7 +29,7 @@
 <div id="date">
     <h3 id="day">
         <strong>
-            @*@DateTime.Now.DayOfWeek*@
+            @DateTime.Now.DayOfWeek(new CultureInfo("fr-FR"))
             @DateTime.Now.ToShortDateString()
             @DateTime.Now.ToShortTimeString()
         </strong>

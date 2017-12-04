@@ -11,6 +11,7 @@ namespace u3ndahl.Data
         List<Program> programList = new List<Program>();
         
 
+
         private List<Program> programs = new List<Program>
             {
                 //Kanal 1
@@ -114,6 +115,8 @@ namespace u3ndahl.Data
 
             return result;
         }
+
+        
 
 
         //public string DayOfWeek(DayOfWeek day)
