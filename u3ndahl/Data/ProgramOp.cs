@@ -64,7 +64,6 @@ namespace u3ndahl.Data
         public List<Program> GetChannel(int channel)
         {
             var result = programs.FindAll(c => c.channel == channel);
-            //var result = programs.FirstOrDefault(c => c.channel == channel);
             return result;
         }
 
@@ -81,33 +80,6 @@ namespace u3ndahl.Data
             return result;
         }
 
-
-        public List<Program> GetC(int channel)
-        {
-            if (channel == 1)
-            {
-                var result1 = programs.FindAll(c => c.channel == channel);
-                return result1;
-            }
-            else if (channel == 2)
-            {
-                var result2 = programs.FindAll(c => c.channel == channel);
-                return result2;
-            }
-            else if (channel == 3)
-            {
-                var result3 = programs.FindAll(c => c.channel == channel);
-                return result3;
-            }
-            else if (channel == 4)
-            {
-                var result4 = programs.FindAll(c => c.channel == channel);
-                return result4;
-            }
-            else
-                return null;
-
-        }
 
         public List<Program> GetChannelAndCategory(int channel, string category)
         {

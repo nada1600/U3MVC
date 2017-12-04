@@ -19,6 +19,7 @@ namespace u3ndahl.Controllers
             return View(model);
         }
 
+        //Program
         public ActionResult ShowProgram()
         {
             //Sortera programlistan (A-Ö)
@@ -26,15 +27,13 @@ namespace u3ndahl.Controllers
          
             return PartialView(model);
         }
+
+
         public ActionResult ShowInfo(int? id)
         {
             var p = po.GetProgramById(id);
             return View(p);
         }
-        //public string Chann()
-        //{
-        //    return "Kanal 1";
-        //}
 
         public ActionResult _Channel(int channel)
         {
@@ -46,8 +45,6 @@ namespace u3ndahl.Controllers
         {
             var c = po.GetCategory(category);
             return View(c);
-            //var c = po.GetNavCategory(category);
-            //return PartialView(c);
         }
 
         public ActionResult ShowCategoryByChannel(int channel, string category)
@@ -55,20 +52,6 @@ namespace u3ndahl.Controllers
             var cc = po.GetChannelAndCategory(channel, category);
             return PartialView(cc);
         }
-
-        public string CheckRadio(FormCollection frm)
-        {
-            string categoryradio = frm["Category"].ToString();
-            return categoryradio;
-        }
-
-
-        //[HttpPost]
-        //public ActionResult ShowCategory(Program model)
-        //{
-        //    return View();
-        //}
-
 
 
 
