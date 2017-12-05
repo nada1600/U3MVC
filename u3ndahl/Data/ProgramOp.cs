@@ -11,7 +11,7 @@ namespace u3ndahl.Data
         List<Program> programList = new List<Program>();
         
 
-
+        //Lista med program
         private List<Program> programs = new List<Program>
             {
                 //Kanal 1
@@ -44,11 +44,13 @@ namespace u3ndahl.Data
 
             };
 
+        //Hämtar programmen i "programs"
         public List<Program> GetPrograms()
         {
             return programs;
         }
 
+        //Metod för att hämta alla unika kategorier i listan "programs". (Används ej i nuläget.)
         public List<Program>GetUnique()
         {
             var DistinctItems = programs.GroupBy(x => x.category).Select(y => y.First());
@@ -60,13 +62,14 @@ namespace u3ndahl.Data
             return DistinctItems.ToList();
         }
 
-
+        //Hämtar alla program som tillhör en specifik kanal. Kanalen anges via en parameter.
         public List<Program> GetChannel(int channel)
         {
             var result = programs.FindAll(c => c.channel == channel);
             return result;
         }
 
+        //Hämtar alla program som tillhör en specifik kategori. Kategorin anges via en parameter.
         public List<Program> GetCategory(string category)
         {
             var result = programs.FindAll(p => p.category == category);
@@ -74,13 +77,14 @@ namespace u3ndahl.Data
 
         }
 
+        //Hämtar ett specifik program genom id:t. (För att kunna visa detaljer om programmet.)
         public Program GetProgramById(int? id)
         {
             var result = programs.FirstOrDefault(i => i.id == id);
             return result;
         }
 
-
+        //Hämtar program som tillhör en specifik kanal och en specifik kategori.
         public List<Program> GetChannelAndCategory(int channel, string category)
         {
             var result = programs.FindAll(c => (c.channel == channel && c.category == category));
@@ -90,7 +94,7 @@ namespace u3ndahl.Data
 
         
 
-
+        //Första försöket att få till veckodagarnas svenska namn...
         //public string DayOfWeek(DayOfWeek day)
         //{
         //    switch(day)

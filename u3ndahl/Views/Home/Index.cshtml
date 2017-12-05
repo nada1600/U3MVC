@@ -14,6 +14,7 @@
         <nav id="second">
             <a href="#second" id="expand"><img src="~/Photos/expand.png" alt="Vy" /></a>           
             <ul>
+                <!--För att ha gjort det snyggare hade det varit att föredra en iteration som presenterar alla unika categoreier-->
                 @*@Model.Select(x => x.category).Distinct();*@
                 | @Html.ActionLink("Barn", "ShowCategory", new { category = "Barn" }, new { @class = "category", @id = "barn" }) |
                 @Html.ActionLink("Nyheter", "ShowCategory", new { category = "Nyheter" }, new { @class = "category" }) |
@@ -24,11 +25,12 @@
         </nav>
     </header>
 </div>
-<!--------------------------------------------------HEADER2 SLUT--------------------------------------------------------->
+<!--------------------------------------------------Header2 SLUT--------------------------------------------------------->
 
 
 <div class="date">
-<!--Får felmeddelande då javascriptet endast ska köras på "startsidan".-->    
+<!--Får felmeddelande då javascriptet endast ska köras på "startsidan".--> 
+    <!--Javascript-function som presenterar veckodagen på svenska.-->   
         @*<h3 id="day"></h3>*@
         <h3 id="datetime">
                 @*@DateTime.Now.DayOfWeek*@
@@ -42,10 +44,8 @@
     <!-- Sektioner med ikoner för de olika kanalerna -->
     <section>
         <img src="~/Photos/nr1.png" title="Kanal 1" alt="Kanal 1" />
-        @*@Html.Partial("Channel")*@
         @Html.Action("_Channel", "Home", new { channel = 1 })   
-        @*@Html.Action("ShowCategoryByChannel", "Home", new { channel = 1, category = "" })*@ 
-        
+        @*@Html.Action("ShowCategoryByChannel", "Home", new { channel = 1, category = "" })*@      
     </section>
 
     <section>
