@@ -21,6 +21,7 @@ namespace u3ndahl.Controllers
             return View();
         }
 
+        //Information om webbsidan
         public ActionResult About()
         {
             return View();
